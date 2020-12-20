@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
 using System.Configuration;
-namespace EMS
+namespace EVoting
  
 {
     public class Connecting

@@ -13,10 +13,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Threading;
-using EMS;
+using EVoting;
 using System.IO;
 
-namespace EMS
+namespace EVoting
 {
     public partial class dashboard : Form
    //Device Init Components
@@ -752,10 +752,6 @@ namespace EMS
             pictureBox11.BackColor = Color.Transparent;
         }
 
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -909,7 +905,7 @@ namespace EMS
         {
             bIsTimeToDie = true;
             zkfp2.Terminate();
-            EMS.enroll ff = new EMS.enroll();
+            EVoting.enroll ff = new EVoting.enroll();
             this.Hide();
             ff.ShowDialog();
         }

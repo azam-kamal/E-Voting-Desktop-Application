@@ -1,4 +1,4 @@
-﻿namespace EMS
+﻿namespace EVoting
 {
     partial class settings
     {
@@ -273,7 +273,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.ErrorImage = global::EMS.Properties.Resources.Warning;
+            this.pictureBox2.ErrorImage = global::EVoting.Properties.Resources.Warning;
             this.pictureBox2.Location = new System.Drawing.Point(356, 225);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(35, 30);
@@ -282,7 +282,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.ErrorImage = global::EMS.Properties.Resources.Warning;
+            this.pictureBox5.ErrorImage = global::EVoting.Properties.Resources.Warning;
             this.pictureBox5.Location = new System.Drawing.Point(356, 261);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(35, 30);
@@ -291,7 +291,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.ErrorImage = global::EMS.Properties.Resources.Warning;
+            this.pictureBox6.ErrorImage = global::EVoting.Properties.Resources.Warning;
             this.pictureBox6.Location = new System.Drawing.Point(683, 219);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(35, 30);
@@ -300,7 +300,7 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.ErrorImage = global::EMS.Properties.Resources.Warning;
+            this.pictureBox7.ErrorImage = global::EVoting.Properties.Resources.Warning;
             this.pictureBox7.Location = new System.Drawing.Point(683, 265);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(35, 30);

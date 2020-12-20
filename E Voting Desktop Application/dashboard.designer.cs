@@ -1,4 +1,4 @@
-﻿namespace EMS
+﻿namespace EVoting
 {
     partial class dashboard
     {
@@ -189,9 +189,10 @@
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label8.Location = new System.Drawing.Point(90, 13);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(119, 16);
+            this.label8.Size = new System.Drawing.Size(91, 16);
             this.label8.TabIndex = 2;
-            this.label8.Text = "Salary Employees";
+            this.label8.Text = "People Voted";
+       
             this.label8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox8_MouseClick);
             this.label8.MouseLeave += new System.EventHandler(this.bunifuCards1_MouseLeave_1);
             this.label8.MouseHover += new System.EventHandler(this.bunifuCards1_MouseHover_1);
@@ -202,6 +203,7 @@
             this.pictureBox8.Location = new System.Drawing.Point(14, 13);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(38, 32);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 16;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox8_MouseClick);
@@ -249,9 +251,9 @@
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label9.Location = new System.Drawing.Point(91, 13);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(129, 16);
+            this.label9.Size = new System.Drawing.Size(74, 16);
             this.label9.TabIndex = 17;
-            this.label9.Text = "Contract Employees";
+            this.label9.Text = "Still to Vote";
             this.label9.MouseClick += new System.Windows.Forms.MouseEventHandler(this.bunifuCards2_MouseClick);
             this.label9.MouseLeave += new System.EventHandler(this.bunifuCards2_MouseLeave_1);
             this.label9.MouseHover += new System.EventHandler(this.bunifuCards2_MouseHover_1);
@@ -262,6 +264,7 @@
             this.pictureBox9.Location = new System.Drawing.Point(13, 13);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(38, 32);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 17;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.MouseClick += new System.Windows.Forms.MouseEventHandler(this.bunifuCards2_MouseClick);
@@ -309,9 +312,9 @@
             this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label10.Location = new System.Drawing.Point(98, 13);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(111, 16);
+            this.label10.Size = new System.Drawing.Size(117, 16);
             this.label10.TabIndex = 18;
-            this.label10.Text = "Total Employees";
+            this.label10.Text = "Registered Voters";
             this.label10.MouseClick += new System.Windows.Forms.MouseEventHandler(this.bunifuCards3_MouseClick);
             this.label10.MouseLeave += new System.EventHandler(this.bunifuCards3_MouseLeave_1);
             this.label10.MouseHover += new System.EventHandler(this.bunifuCards3_MouseHover_1);
@@ -322,6 +325,7 @@
             this.pictureBox10.Location = new System.Drawing.Point(15, 13);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(38, 32);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 18;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.MouseClick += new System.Windows.Forms.MouseEventHandler(this.bunifuCards3_MouseClick);
@@ -445,6 +449,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(16, 14);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(58, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 

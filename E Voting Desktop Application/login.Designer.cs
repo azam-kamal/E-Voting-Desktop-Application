@@ -1,4 +1,4 @@
-﻿namespace EMS
+﻿namespace EVoting
 {
     partial class login
     {
@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.pass_txt_box = new System.Windows.Forms.TextBox();
             this.username_TxtBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -42,12 +41,15 @@
             this.exit_btn = new System.Windows.Forms.PictureBox();
             this.login_btn = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.login_btn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
@@ -55,6 +57,7 @@
             this.bunifuGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.pictureBox4);
             this.bunifuGradientPanel1.Controls.Add(this.label1);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(32)))));
@@ -71,25 +74,13 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Myanmar Text", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 22);
+            this.label1.Location = new System.Drawing.Point(63, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 34);
+            this.label1.Size = new System.Drawing.Size(112, 43);
             this.label1.TabIndex = 0;
             this.label1.Text = "E-Voting";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(115, 246);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 20);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Login";
             // 
             // pass_txt_box
             // 
@@ -126,6 +117,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(103, 150);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(72, 73);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
@@ -174,6 +166,7 @@
             this.exit_btn.TabIndex = 48;
             this.exit_btn.TabStop = false;
             this.exit_btn.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.exit_btn.MouseHover += new System.EventHandler(this.exit_btn_MouseHover);
             // 
             // login_btn
             // 
@@ -196,12 +189,34 @@
             this.label5.TabIndex = 50;
             this.label5.Text = "login";
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(8, 12);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(58, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(65, 247);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(141, 16);
+            this.label4.TabIndex = 51;
+            this.label4.Text = "Administrator Login";
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(164)))), ((int)(((byte)(120)))));
             this.ClientSize = new System.Drawing.Size(278, 522);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.login_btn);
             this.Controls.Add(this.exit_btn);
@@ -209,7 +224,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.pass_txt_box);
             this.Controls.Add(this.username_TxtBox);
             this.Controls.Add(this.pictureBox1);
@@ -227,6 +241,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.login_btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,7 +251,6 @@
 
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox pass_txt_box;
         private System.Windows.Forms.TextBox username_TxtBox;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -247,5 +261,7 @@
         private System.Windows.Forms.PictureBox exit_btn;
         private System.Windows.Forms.PictureBox login_btn;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label4;
     }
 }

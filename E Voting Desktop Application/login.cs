@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Threading;
-namespace EMS
+namespace EVoting
 {
     public partial class login : Form
     {
@@ -18,11 +18,7 @@ namespace EMS
             InitializeComponent();
           
         }
-//Database Connection
-        // SqlConnection con = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=ems;Integrated Security=True");
-        // SqlDataAdapter adap;
-        // DataSet ds;
-        // bool cross;
+         bool cross;
         
    //GUI Design
         private void textBox1_MouseClick(object sender, MouseEventArgs e)
@@ -93,21 +89,13 @@ namespace EMS
             }
             else
             {
-                //Username and Password Match
-                // ds = new DataSet();
-                // con.Open();
-                // adap = new SqlDataAdapter("select *  from login", con);
-                // adap.Fill(ds, "login");
 
-                // if (ds.Tables[0].Rows.Count > 0)
-                // {
-
-                //     string username1 = ds.Tables[0].Rows[0]["username"].ToString();
-                //     string password1 = ds.Tables[0].Rows[0]["password"].ToString();
-                //     con.Close();
+                string username1 = "admin";
+                string password1 = "1234";
                     if ((username_TxtBox.Text == username1 && pass_txt_box.Text == password1))
                     {
                         this.Hide();
+                        this.Dispose();
                         dashboard f2 = new dashboard();
                         f2.ShowDialog();
                     }
@@ -117,28 +105,12 @@ namespace EMS
                     }
                 }
             }
-        }
 
-        private void pictureBox4_MouseHover(object sender, EventArgs e)
+        private void exit_btn_MouseHover(object sender, EventArgs e)
         {
             exit_btn.BackColor = Color.LightBlue;
-
         }
-
-        private void pictureBox4_MouseLeave(object sender, EventArgs e)
-        {
-            exit_btn.BackColor = Color.Transparent;
-        }
-
-        private void pictureBox5_MouseLeave(object sender, EventArgs e)
-        {
-            login_btn.BackColor = Color.Transparent;
-        }
-
-        private void pictureBox5_MouseHover(object sender, EventArgs e)
-        {
-            login_btn.BackColor = Color.LightGreen;
-        }
+    }
         
     }
-}
+

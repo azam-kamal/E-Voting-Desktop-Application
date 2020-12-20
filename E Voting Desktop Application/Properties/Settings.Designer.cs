@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EMS.Properties
+namespace EVoting.Properties
 {
 
 
