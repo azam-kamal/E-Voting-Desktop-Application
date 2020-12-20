@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace E_Voting_Desktop_Application.Properties
+namespace EMS.Properties
 {
 
 
