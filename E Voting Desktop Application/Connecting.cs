@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
 using System.Configuration;
-namespace EVoting
+namespace E_Voting_Desktop_Application
  
 {
     public class Connecting

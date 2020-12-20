@@ -1,4 +1,4 @@
-﻿namespace EVoting
+﻿namespace E_Voting_Desktop_Application
 {
     partial class settings
     {
@@ -63,6 +63,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.panel1.Location = new System.Drawing.Point(0, 70);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(779, 15);
@@ -92,17 +93,17 @@
             // 
             // bunifuGradientPanel1
             // 
-            this.bunifuGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(27)))), ((int)(((byte)(121)))));
+            this.bunifuGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.Controls.Add(this.panel1);
             this.bunifuGradientPanel1.Controls.Add(this.pictureBox1);
             this.bunifuGradientPanel1.Controls.Add(this.label1);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(27)))), ((int)(((byte)(121)))));
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(27)))), ((int)(((byte)(121)))));
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(117)))), ((int)(((byte)(230)))));
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.PaleTurquoise;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(32)))));
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(255)))), ((int)(((byte)(217)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
@@ -115,6 +116,7 @@
             this.back_btn.Location = new System.Drawing.Point(12, 310);
             this.back_btn.Name = "back_btn";
             this.back_btn.Size = new System.Drawing.Size(31, 34);
+            this.back_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.back_btn.TabIndex = 30;
             this.back_btn.TabStop = false;
             this.back_btn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseClick);
@@ -273,7 +275,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.ErrorImage = global::EVoting.Properties.Resources.Warning;
             this.pictureBox2.Location = new System.Drawing.Point(356, 225);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(35, 30);
@@ -282,7 +283,6 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.ErrorImage = global::EVoting.Properties.Resources.Warning;
             this.pictureBox5.Location = new System.Drawing.Point(356, 261);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(35, 30);
@@ -291,7 +291,6 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.ErrorImage = global::EVoting.Properties.Resources.Warning;
             this.pictureBox6.Location = new System.Drawing.Point(683, 219);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(35, 30);
@@ -300,7 +299,6 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.ErrorImage = global::EVoting.Properties.Resources.Warning;
             this.pictureBox7.Location = new System.Drawing.Point(683, 265);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(35, 30);
@@ -311,7 +309,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(164)))), ((int)(((byte)(120)))));
             this.ClientSize = new System.Drawing.Size(779, 356);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);

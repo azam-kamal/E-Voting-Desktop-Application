@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace EVoting
+namespace E_Voting_Desktop_Application
 {
     public partial class settings : Form
     {

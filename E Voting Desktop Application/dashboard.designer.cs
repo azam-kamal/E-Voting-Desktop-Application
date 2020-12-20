@@ -1,4 +1,4 @@
-﻿namespace EVoting
+﻿namespace E_Voting_Desktop_Application
 {
     partial class dashboard
     {
@@ -37,17 +37,27 @@
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.bunifuCards2 = new Bunifu.Framework.UI.BunifuCards();
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.bunifuCards3 = new Bunifu.Framework.UI.BunifuCards();
             this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.label3 = new System.Windows.Forms.Label();
+            this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -57,51 +67,29 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.picFPImg = new System.Windows.Forms.PictureBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.cmbIdx = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textRes = new System.Windows.Forms.RichTextBox();
-            this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bnIdentify = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.bunifuCards1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.bunifuCards2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.bunifuCards3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFPImg)).BeginInit();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(296, 316);
+            this.label2.Location = new System.Drawing.Point(159, 322);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 13);
             this.label2.TabIndex = 3;
@@ -114,11 +102,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(302, 237);
+            this.label4.Location = new System.Drawing.Point(165, 243);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 13);
+            this.label4.Size = new System.Drawing.Size(74, 13);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Manage Employee";
+            this.label4.Text = "Register Voter";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             this.label4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label4_MouseClick);
             this.label4.MouseLeave += new System.EventHandler(this.label4_MouseLeave);
             this.label4.MouseHover += new System.EventHandler(this.label4_MouseHover);
@@ -127,11 +116,12 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(425, 316);
+            this.label6.Location = new System.Drawing.Point(288, 322);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 13);
             this.label6.TabIndex = 11;
             this.label6.Text = "Login Settings";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             this.label6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label6_MouseClick);
             this.label6.MouseLeave += new System.EventHandler(this.label6_MouseLeave);
             this.label6.MouseHover += new System.EventHandler(this.label6_MouseHover);
@@ -139,7 +129,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(649, 316);
+            this.label7.Location = new System.Drawing.Point(512, 322);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 13);
             this.label7.TabIndex = 13;
@@ -192,23 +182,9 @@
             this.label8.Size = new System.Drawing.Size(91, 16);
             this.label8.TabIndex = 2;
             this.label8.Text = "People Voted";
-       
             this.label8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox8_MouseClick);
             this.label8.MouseLeave += new System.EventHandler(this.bunifuCards1_MouseLeave_1);
             this.label8.MouseHover += new System.EventHandler(this.bunifuCards1_MouseHover_1);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(14, 13);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(38, 32);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 16;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox8_MouseClick);
-            this.pictureBox8.MouseLeave += new System.EventHandler(this.bunifuCards1_MouseLeave_1);
-            this.pictureBox8.MouseHover += new System.EventHandler(this.bunifuCards1_MouseHover_1);
             // 
             // bunifuCards2
             // 
@@ -258,19 +234,6 @@
             this.label9.MouseLeave += new System.EventHandler(this.bunifuCards2_MouseLeave_1);
             this.label9.MouseHover += new System.EventHandler(this.bunifuCards2_MouseHover_1);
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(13, 13);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(38, 32);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 17;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.MouseClick += new System.Windows.Forms.MouseEventHandler(this.bunifuCards2_MouseClick);
-            this.pictureBox9.MouseLeave += new System.EventHandler(this.bunifuCards2_MouseLeave_1);
-            this.pictureBox9.MouseHover += new System.EventHandler(this.bunifuCards2_MouseHover_1);
-            // 
             // bunifuCards3
             // 
             this.bunifuCards3.BackColor = System.Drawing.Color.LightGreen;
@@ -319,23 +282,10 @@
             this.label10.MouseLeave += new System.EventHandler(this.bunifuCards3_MouseLeave_1);
             this.label10.MouseHover += new System.EventHandler(this.bunifuCards3_MouseHover_1);
             // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(15, 13);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(38, 32);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 18;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.MouseClick += new System.Windows.Forms.MouseEventHandler(this.bunifuCards3_MouseClick);
-            this.pictureBox10.MouseLeave += new System.EventHandler(this.bunifuCards3_MouseLeave_1);
-            this.pictureBox10.MouseHover += new System.EventHandler(this.bunifuCards3_MouseHover_1);
-            // 
             // bunifuSeparator1
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.bunifuSeparator1.LineThickness = 1;
             this.bunifuSeparator1.Location = new System.Drawing.Point(3, 67);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
@@ -356,10 +306,159 @@
             this.bunifuSeparator2.Transparency = 255;
             this.bunifuSeparator2.Vertical = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(277, 243);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 13);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Register Candidate";
+            this.label3.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
+            this.label3.MouseHover += new System.EventHandler(this.label3_MouseHover);
+            // 
+            // bunifuSeparator3
+            // 
+            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator3.LineThickness = 1;
+            this.bunifuSeparator3.Location = new System.Drawing.Point(151, 345);
+            this.bunifuSeparator3.Name = "bunifuSeparator3";
+            this.bunifuSeparator3.Size = new System.Drawing.Size(426, 19);
+            this.bunifuSeparator3.TabIndex = 29;
+            this.bunifuSeparator3.Transparency = 255;
+            this.bunifuSeparator3.Vertical = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.Location = new System.Drawing.Point(396, 243);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(62, 13);
+            this.label15.TabIndex = 34;
+            this.label15.Text = "Start Voting";
+            this.label15.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label15_MouseClick);
+            this.label15.MouseLeave += new System.EventHandler(this.label15_MouseLeave);
+            this.label15.MouseHover += new System.EventHandler(this.label15_MouseHover);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label16.Location = new System.Drawing.Point(509, 246);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(38, 13);
+            this.label16.TabIndex = 36;
+            this.label16.Text = "Payroll";
+            this.label16.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label16_MouseClick);
+            this.label16.MouseLeave += new System.EventHandler(this.label16_MouseLeave);
+            this.label16.MouseHover += new System.EventHandler(this.label16_MouseHover);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(407, 322);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(51, 13);
+            this.label17.TabIndex = 38;
+            this.label17.Text = "About Us";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.Location = new System.Drawing.Point(404, 269);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(54, 50);
+            this.pictureBox12.TabIndex = 37;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(502, 190);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(54, 50);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 35;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label16_MouseClick);
+            this.pictureBox11.MouseLeave += new System.EventHandler(this.label16_MouseLeave);
+            this.pictureBox11.MouseHover += new System.EventHandler(this.label16_MouseHover);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(399, 190);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(54, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 33;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label15_MouseClick);
+            this.pictureBox5.MouseLeave += new System.EventHandler(this.label15_MouseLeave);
+            this.pictureBox5.MouseHover += new System.EventHandler(this.label15_MouseHover);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(298, 190);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(54, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 18;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
+            this.pictureBox3.MouseHover += new System.EventHandler(this.label3_MouseHover);
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(15, 13);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(38, 32);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 18;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.MouseClick += new System.Windows.Forms.MouseEventHandler(this.bunifuCards3_MouseClick);
+            this.pictureBox10.MouseLeave += new System.EventHandler(this.bunifuCards3_MouseLeave_1);
+            this.pictureBox10.MouseHover += new System.EventHandler(this.bunifuCards3_MouseHover_1);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(38, 32);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 17;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.MouseClick += new System.Windows.Forms.MouseEventHandler(this.bunifuCards2_MouseClick);
+            this.pictureBox9.MouseLeave += new System.EventHandler(this.bunifuCards2_MouseLeave_1);
+            this.pictureBox9.MouseHover += new System.EventHandler(this.bunifuCards2_MouseHover_1);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(14, 13);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(38, 32);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 16;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox8_MouseClick);
+            this.pictureBox8.MouseLeave += new System.EventHandler(this.bunifuCards1_MouseLeave_1);
+            this.pictureBox8.MouseHover += new System.EventHandler(this.bunifuCards1_MouseHover_1);
+            // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(640, 263);
+            this.pictureBox7.Location = new System.Drawing.Point(503, 269);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(54, 50);
             this.pictureBox7.TabIndex = 12;
@@ -371,11 +470,12 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(436, 263);
+            this.pictureBox6.Location = new System.Drawing.Point(299, 269);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(54, 50);
             this.pictureBox6.TabIndex = 10;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             this.pictureBox6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label6_MouseClick);
             this.pictureBox6.MouseLeave += new System.EventHandler(this.label6_MouseLeave);
             this.pictureBox6.MouseHover += new System.EventHandler(this.label6_MouseHover);
@@ -383,11 +483,13 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(321, 184);
+            this.pictureBox4.Location = new System.Drawing.Point(184, 190);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(54, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             this.pictureBox4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label4_MouseClick);
             this.pictureBox4.MouseLeave += new System.EventHandler(this.label4_MouseLeave);
             this.pictureBox4.MouseHover += new System.EventHandler(this.label4_MouseHover);
@@ -395,7 +497,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(321, 263);
+            this.pictureBox2.Location = new System.Drawing.Point(184, 269);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(54, 50);
             this.pictureBox2.TabIndex = 2;
@@ -465,231 +567,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Dashboard";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(414, 237);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 13);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Register Biometric";
-            this.label3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label3_MouseClick);
-            this.label3.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
-            this.label3.MouseHover += new System.EventHandler(this.label3_MouseHover);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(435, 184);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(54, 50);
-            this.pictureBox3.TabIndex = 18;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label3_MouseClick);
-            this.pictureBox3.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
-            this.pictureBox3.MouseHover += new System.EventHandler(this.label3_MouseHover);
-            // 
-            // picFPImg
-            // 
-            this.picFPImg.BackColor = System.Drawing.Color.Gray;
-            this.picFPImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picFPImg.Location = new System.Drawing.Point(0, 0);
-            this.picFPImg.Name = "picFPImg";
-            this.picFPImg.Size = new System.Drawing.Size(237, 291);
-            this.picFPImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picFPImg.TabIndex = 8;
-            this.picFPImg.TabStop = false;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(12, 184);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(247, 316);
-            this.tabControl1.TabIndex = 27;
-            this.tabControl1.Tag = "S";
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.picFPImg);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(239, 290);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Finger Print";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // cmbIdx
-            // 
-            this.cmbIdx.FormattingEnabled = true;
-            this.cmbIdx.Location = new System.Drawing.Point(60, 519);
-            this.cmbIdx.Name = "cmbIdx";
-            this.cmbIdx.Size = new System.Drawing.Size(40, 21);
-            this.cmbIdx.TabIndex = 26;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(13, 525);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 13);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "Device";
-            // 
-            // textRes
-            // 
-            this.textRes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(32)))));
-            this.textRes.ForeColor = System.Drawing.Color.LimeGreen;
-            this.textRes.Location = new System.Drawing.Point(269, 375);
-            this.textRes.Name = "textRes";
-            this.textRes.Size = new System.Drawing.Size(445, 125);
-            this.textRes.TabIndex = 28;
-            this.textRes.Text = "";
-            this.textRes.UseWaitCursor = true;
-            // 
-            // bunifuSeparator3
-            // 
-            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator3.LineThickness = 1;
-            this.bunifuSeparator3.Location = new System.Drawing.Point(288, 339);
-            this.bunifuSeparator3.Name = "bunifuSeparator3";
-            this.bunifuSeparator3.Size = new System.Drawing.Size(426, 19);
-            this.bunifuSeparator3.TabIndex = 29;
-            this.bunifuSeparator3.Transparency = 255;
-            this.bunifuSeparator3.Vertical = false;
-            // 
-            // bnIdentify
-            // 
-            this.bnIdentify.BackColor = System.Drawing.Color.LightGreen;
-            this.bnIdentify.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bnIdentify.Location = new System.Drawing.Point(299, 515);
-            this.bnIdentify.Name = "bnIdentify";
-            this.bnIdentify.Size = new System.Drawing.Size(105, 25);
-            this.bnIdentify.TabIndex = 24;
-            this.bnIdentify.Text = "Start Attendance";
-            this.bnIdentify.UseVisualStyleBackColor = false;
-            this.bnIdentify.Click += new System.EventHandler(this.bnIdentify_Click);
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // button2
-            // 
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(587, 515);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 25);
-            this.button2.TabIndex = 31;
-            this.button2.Text = "Finish Attendance";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(443, 515);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(105, 25);
-            this.button3.TabIndex = 32;
-            this.button3.Text = "Pause";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(533, 237);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(62, 13);
-            this.label15.TabIndex = 34;
-            this.label15.Text = "Attendance";
-            this.label15.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label15_MouseClick);
-            this.label15.MouseLeave += new System.EventHandler(this.label15_MouseLeave);
-            this.label15.MouseHover += new System.EventHandler(this.label15_MouseHover);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(536, 184);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(54, 50);
-            this.pictureBox5.TabIndex = 33;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label15_MouseClick);
-            this.pictureBox5.MouseLeave += new System.EventHandler(this.label15_MouseLeave);
-            this.pictureBox5.MouseHover += new System.EventHandler(this.label15_MouseHover);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label16.Location = new System.Drawing.Point(646, 240);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(38, 13);
-            this.label16.TabIndex = 36;
-            this.label16.Text = "Payroll";
-            this.label16.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label16_MouseClick);
-            this.label16.MouseLeave += new System.EventHandler(this.label16_MouseLeave);
-            this.label16.MouseHover += new System.EventHandler(this.label16_MouseHover);
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(639, 184);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(54, 50);
-            this.pictureBox11.TabIndex = 35;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label16_MouseClick);
-            this.pictureBox11.MouseLeave += new System.EventHandler(this.label16_MouseLeave);
-            this.pictureBox11.MouseHover += new System.EventHandler(this.label16_MouseHover);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(544, 316);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(51, 13);
-            this.label17.TabIndex = 38;
-            this.label17.Text = "About Us";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(541, 263);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(54, 50);
-            this.pictureBox12.TabIndex = 37;
-            this.pictureBox12.TabStop = false;
-            // 
             // dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(164)))), ((int)(((byte)(120)))));
-            this.ClientSize = new System.Drawing.Size(745, 557);
+            this.ClientSize = new System.Drawing.Size(745, 368);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.bunifuSeparator3);
-            this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.cmbIdx);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.bnIdentify);
-            this.Controls.Add(this.textRes);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.bunifuSeparator2);
@@ -715,13 +605,17 @@
             this.Load += new System.EventHandler(this.dashboard_Load);
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.bunifuCards2.ResumeLayout(false);
             this.bunifuCards2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.bunifuCards3.ResumeLayout(false);
             this.bunifuCards3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -729,13 +623,6 @@
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFPImg)).EndInit();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -770,19 +657,10 @@
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox picFPImg;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.ComboBox cmbIdx;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RichTextBox textRes;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
-        private System.Windows.Forms.Button bnIdentify;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label16;
