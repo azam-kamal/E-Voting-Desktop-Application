@@ -91,14 +91,17 @@ namespace E_Voting_Desktop_Application
             {
 
                 string username1 = "admin";
-                string password1 = "1234";
+                string password1 = "admin";
                     if ((username_TxtBox.Text == username1 && pass_txt_box.Text == password1))
                     {
-                        this.Hide();
-                        this.Dispose();
+                    MessageBox.Show("yaha aya");                      
                         dashboard f2 = new dashboard();
-                        f2.ShowDialog();
-                    }
+                    MessageBox.Show("yaha aya2");
+                    f2.ShowDialog();
+                    MessageBox.Show("yaha aya3");
+                    this.Hide();
+                        this.Dispose();
+                }
                     else
                     {
                         MessageBox.Show("Incorrect username or password");

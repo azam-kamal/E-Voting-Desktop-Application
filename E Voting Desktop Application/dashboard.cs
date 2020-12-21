@@ -18,9 +18,17 @@ using System.IO;
 
 namespace E_Voting_Desktop_Application
 {
-    public partial class dashboard : Form { 
-   //Device Init Components
-   
+    public partial class dashboard : Form {
+
+        //Device Init Components
+        public dashboard()
+        {
+            InitializeComponent();
+            timer1.Enabled = true;
+            timer1.Interval = 1000;
+
+        }
+
 
         private void dashboard_Load(object sender, EventArgs e)
         {
