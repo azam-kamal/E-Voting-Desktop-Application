@@ -315,6 +315,7 @@
             this.label3.Size = new System.Drawing.Size(97, 13);
             this.label3.TabIndex = 19;
             this.label3.Text = "Register Candidate";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             this.label3.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
             this.label3.MouseHover += new System.EventHandler(this.label3_MouseHover);
             // 
@@ -413,6 +414,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 18;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             this.pictureBox3.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
             this.pictureBox3.MouseHover += new System.EventHandler(this.label3_MouseHover);
             // 
@@ -571,7 +573,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(164)))), ((int)(((byte)(120)))));
+            this.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ClientSize = new System.Drawing.Size(745, 368);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.pictureBox12);

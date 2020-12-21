@@ -301,5 +301,17 @@ namespace E_Voting_Desktop_Application
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            candidateRegs cr = new candidateRegs();
+            this.Hide();
+            cr.ShowDialog();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
