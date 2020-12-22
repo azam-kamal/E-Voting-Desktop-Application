@@ -94,11 +94,11 @@ namespace E_Voting_Desktop_Application
                 string password1 = "admin";
                     if ((username_TxtBox.Text == username1 && pass_txt_box.Text == password1))
                     {
-                    MessageBox.Show("yaha aya");                      
-                        dashboard f2 = new dashboard();
-                    MessageBox.Show("yaha aya2");
+                         
+                      dashboard f2 = new dashboard();
+                    
                     f2.ShowDialog();
-                    MessageBox.Show("yaha aya3");
+        
                     this.Hide();
                         this.Dispose();
                 }

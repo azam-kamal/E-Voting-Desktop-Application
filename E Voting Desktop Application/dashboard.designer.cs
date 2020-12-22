@@ -140,7 +140,7 @@
             // 
             // bunifuCards1
             // 
-            this.bunifuCards1.BackColor = System.Drawing.Color.LightGreen;
+            this.bunifuCards1.BackColor = System.Drawing.Color.AliceBlue;
             this.bunifuCards1.BorderRadius = 5;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -188,7 +188,7 @@
             // 
             // bunifuCards2
             // 
-            this.bunifuCards2.BackColor = System.Drawing.Color.LightGreen;
+            this.bunifuCards2.BackColor = System.Drawing.Color.AliceBlue;
             this.bunifuCards2.BorderRadius = 5;
             this.bunifuCards2.BottomSahddow = true;
             this.bunifuCards2.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -236,7 +236,7 @@
             // 
             // bunifuCards3
             // 
-            this.bunifuCards3.BackColor = System.Drawing.Color.LightGreen;
+            this.bunifuCards3.BackColor = System.Drawing.Color.AliceBlue;
             this.bunifuCards3.BorderRadius = 5;
             this.bunifuCards3.BottomSahddow = true;
             this.bunifuCards3.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -354,9 +354,9 @@
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label16.Location = new System.Drawing.Point(509, 246);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(38, 13);
+            this.label16.Size = new System.Drawing.Size(42, 13);
             this.label16.TabIndex = 36;
-            this.label16.Text = "Payroll";
+            this.label16.Text = "Results";
             this.label16.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label16_MouseClick);
             this.label16.MouseLeave += new System.EventHandler(this.label16_MouseLeave);
             this.label16.MouseHover += new System.EventHandler(this.label16_MouseHover);
@@ -573,7 +573,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(37)))));
             this.ClientSize = new System.Drawing.Size(745, 368);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.pictureBox12);
