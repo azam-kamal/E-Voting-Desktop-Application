@@ -16,9 +16,9 @@ using Firebase.Database.Http;
 
 namespace E_Voting_Desktop_Application
 {
-    public partial class candidateRegs : Form
+    public partial class CandidateRegs : Form
     {
-        public candidateRegs()
+        public CandidateRegs()
         {
             InitializeComponent();
         }
@@ -54,10 +54,13 @@ namespace E_Voting_Desktop_Application
             dd.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+    
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+
             string repre = "";
-            if (checkBox1.Checked == true && checkBox2.Checked==false)
+            if (checkBox1.Checked == true && checkBox2.Checked == false)
             {
                 repre = "National";
             }
@@ -69,27 +72,66 @@ namespace E_Voting_Desktop_Application
             {
                 MessageBox.Show("Please Select atleast One Representation");
             }
+            else if (checkBox1.Checked == true && checkBox2.Checked == true)
+            {
+                repre = "Both";
+            }
 
             var candidateIdKey = FirebaseKeyGenerator.Next();
 
-            CandidateRegs crs = new CandidateRegs()
+            candidateRegs crs = new candidateRegs()
             {
-                CandidateId = candidateIdKey,
-                CandidateName = textBox1.Text,
-                CandidateNicNumber = textBox2.Text,
-                party = comboBox1.SelectedItem.ToString(),
+                candidateId = candidateIdKey,
+                candidateName = bunifuMaterialTextbox1.Text,
+                candidateNicNumber = bunifuMaterialTextbox2.Text,
+                age=numericUpDown1.Value.ToString(),
+                province=bunifuDropdown2.selectedValue,
+                city=bunifuDropdown4.selectedValue,
+                party = bunifuDropdown3.selectedValue,
                 representation = repre,
-                pollingStation=textBox3.Text
+                pollingStation = bunifuDropdown1.selectedValue
             };
 
 
             var key = FirebaseKeyGenerator.Next();
 
 
-         
+
             var sendToCandidate = client.Set(@"/candidates/" + key, crs);
 
             MessageBox.Show("Answer from Auth: " + sendToCandidate.ToString());
+        }
+
+        private void bunifuDropdown2_onItemSelected(object sender, EventArgs e)
+        {
+            if (bunifuDropdown2.selectedValue == "Sindh")
+            {
+                bunifuDropdown4.AddItem("Karachi");
+                bunifuDropdown4.AddItem("Hyderabad");
+                bunifuDropdown4.AddItem("Larkana");
+                bunifuDropdown4.AddItem("Sukkur");
+            }
+            else if (bunifuDropdown2.selectedValue == "Baluchistan")
+            {
+                bunifuDropdown4.AddItem("Quetta");
+                bunifuDropdown4.AddItem("Ziarat");
+                bunifuDropdown4.AddItem("Chaman");
+                bunifuDropdown4.AddItem("Sui");
+            }
+            else if (bunifuDropdown2.selectedValue == "Punjab")
+            {
+                bunifuDropdown4.AddItem("Lahore");
+                bunifuDropdown4.AddItem("Multan");
+                bunifuDropdown4.AddItem("Faisalabad");
+                bunifuDropdown4.AddItem("Bhawalpur");
+            }
+            else if (bunifuDropdown2.selectedValue == "Khyber Pakhtunkhwa")
+            {
+                bunifuDropdown4.AddItem("Peshawar");
+                bunifuDropdown4.AddItem("Mardan");
+                bunifuDropdown4.AddItem("Swat");
+                bunifuDropdown4.AddItem("Abbottabad");
+            }
         }
     }
 }

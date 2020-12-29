@@ -63,56 +63,7 @@ namespace E_Voting_Desktop_Application
             
         }
 
-        private void label4_MouseHover(object sender, EventArgs e)
-        {
-
-            pictureBox4.BackColor = Color.AliceBlue;
-            
-        }
-
-        private void label2_MouseHover(object sender, EventArgs e)
-        {
-            pictureBox2.BackColor = Color.AliceBlue;
-            
-        }
-
-        private void label6_MouseHover(object sender, EventArgs e)
-        {
-            pictureBox6.BackColor = Color.AliceBlue;
-        }
-
-        private void label7_MouseHover(object sender, EventArgs e)
-        {
-            pictureBox7.BackColor = Color.AliceBlue;
-        }
-
-
-        private void label4_MouseLeave(object sender, EventArgs e)
-        {
-            pictureBox4.BackColor = Color.Transparent;
-           
-        }
-
-        private void label2_MouseLeave(object sender, EventArgs e)
-        {
-            pictureBox2.BackColor = Color.Transparent;
-          
-        }
-
-        private void label6_MouseLeave(object sender, EventArgs e)
-        {
-
-            pictureBox6.BackColor = Color.Transparent;
-          
-        }
-
-        private void label7_MouseLeave(object sender, EventArgs e)
-        {
-
-            pictureBox7.BackColor = Color.Transparent;
-            
-        }
-        
+       
 
         private void bunifuCards1_MouseHover(object sender, EventArgs e)
         {
@@ -154,12 +105,6 @@ namespace E_Voting_Desktop_Application
         /// 
       
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            
-
-        }
-
         private void label16_MouseClick(object sender, MouseEventArgs e)
         {
           //  bIsTimeToDie = true;
@@ -167,42 +112,6 @@ namespace E_Voting_Desktop_Application
             //this.Hide();
           //  pay.ShowDialog();
         }
-
-        private void label15_MouseClick(object sender, MouseEventArgs e)
-        {
-            
-        }
-
-        private void label3_MouseHover(object sender, EventArgs e)
-        {
-            pictureBox3.BackColor = Color.AliceBlue;
-        }
-
-        private void label3_MouseLeave(object sender, EventArgs e)
-        {
-            pictureBox3.BackColor = Color.Transparent;
-        }
-
-        private void label15_MouseHover(object sender, EventArgs e)
-        {
-            pictureBox5.BackColor = Color.AliceBlue;
-        }
-
-        private void label15_MouseLeave(object sender, EventArgs e)
-        {
-            pictureBox5.BackColor = Color.Transparent;
-        }
-
-        private void label16_MouseHover(object sender, EventArgs e)
-        {
-            pictureBox11.BackColor = Color.AliceBlue;
-        }
-
-        private void label16_MouseLeave(object sender, EventArgs e)
-        {
-            pictureBox11.BackColor = Color.Transparent;
-        }
-
 
         
         private void bunifuCards1_MouseHover_1(object sender, EventArgs e)
@@ -277,41 +186,27 @@ namespace E_Voting_Desktop_Application
         private void timer1_Tick(object sender, EventArgs e)
         {
             //label14.Text = DateTime.Now.ToLongTimeString();
-            label14.Text=DateTime.Now.ToString("HH:mm");
+            //label14.Text=DateTime.Now.ToString("HH:mm:ss");
+            label14.Text = DateTime.Now.ToLongDateString()+"\n"+DateTime.Now.ToString("HH:mm:ss");
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void bunifuTileButton1_Click(object sender, EventArgs e)
         {
-            registeration r = new registeration();
+            regs_items ri = new regs_items();
             this.Hide();
-            r.ShowDialog();
+            ri.ShowDialog();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void bunifuTileButton2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            candidateRegs cr = new candidateRegs();
+            settings ass = new settings();
             this.Hide();
-            cr.ShowDialog();
+            ass.ShowDialog();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void bunifuTileButton3_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }

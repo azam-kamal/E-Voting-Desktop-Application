@@ -9,5 +9,7 @@
         public string VoterAddress { get; internal set; }
         public bool ProvincialAssemblyVoterCast { get; internal set; }
         public bool NationalAssemblyVoterCast { get; internal set; }
+        public string VoterProvince { get; internal set; }
+        public string VoterCity { get; internal set; }
     }
 }

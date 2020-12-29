@@ -1,10 +1,13 @@
 ﻿namespace E_Voting_Desktop_Application
 {
-    internal class CandidateRegs
+    internal class candidateRegs
     {
-        public string CandidateId { get; internal set; }
-        public string CandidateName { get; internal set; }
-        public string CandidateNicNumber { get; internal set; }
+        public string candidateId { get; internal set; }
+        public string candidateName { get; internal set; }
+        public string candidateNicNumber { get; internal set; }
+        public string age { get; internal set; }
+        public string province { get; internal set; }
+        public string city { get; internal set; }
         public string party { get; internal set; }
         public string representation { get; internal set; }
         public string pollingStation { get; internal set; }

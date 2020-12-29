@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using E_Voting_Desktop_Application;
 using FireSharp.Config;
 using FireSharp.Response;
 using FireSharp.Interfaces;
@@ -16,10 +15,10 @@ using Firebase.Database.Http;
 
 namespace E_Voting_Desktop_Application
 {
-    public partial class registeration : Form
+    public partial class pollingStation_regs : Form
     {
         IFirebaseClient client;
-        public registeration()
+        public pollingStation_regs()
         {
             InitializeComponent();
         }
@@ -32,7 +31,7 @@ namespace E_Voting_Desktop_Application
 
         };
 
-        private void registeration_Load(object sender, EventArgs e)
+        private void pollingStation_regs_Load(object sender, EventArgs e)
         {
             try
             {
@@ -43,64 +42,47 @@ namespace E_Voting_Desktop_Application
                 MessageBox.Show("Connection Error");
             }
         }
-
-  
-
-        private void back_btn_Click(object sender, EventArgs e)
-        {
-            regs_items dd = new regs_items();
-            this.Hide();
-            this.Dispose();
-            dd.ShowDialog();
-        }
+        
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            var voterIdKey = FirebaseKeyGenerator.Next();
-            VoterRegs vrs = new VoterRegs()
+            var PollIdKey = FirebaseKeyGenerator.Next();
+            PollRegs vrs = new PollRegs()
             {
-                VoterExpiryDate = DateTime.Now,
-                VoterId = voterIdKey,
-                VoterMobileNumber = bunifuMaterialTextbox3.Text,
-                VoterNicNumber = bunifuMaterialTextbox2.Text
+                StationNo = bunifuMaterialTextbox2.Text,
+                PollSatationName = bunifuMaterialTextbox2.Text,
+                province=bunifuDropdown3.selectedValue,
+                city=bunifuDropdown2.selectedValue,
+                PollSatationAddress = bunifuMaterialTextbox3.Text,
+                longitutde = bunifuMaterialTextbox4.Text,
+                latitude= bunifuMaterialTextbox5.Text
             };
 
-            VoterInfo vi = new VoterInfo()
-            {
-                VoterNicNumber = bunifuMaterialTextbox2.Text,
-                VoterName = bunifuMaterialTextbox1.Text,
-                VoterMobileNumber = bunifuMaterialTextbox3.Text,
-                VoterHalkaNumber = bunifuDropdown1.selectedValue,
-                VoterAddress = bunifuMaterialTextbox5.Text,
-                VoterProvince=bunifuDropdown3.selectedValue,
-                VoterCity=bunifuDropdown2.selectedValue,
-                ProvincialAssemblyVoterCast = false,
-                NationalAssemblyVoterCast = false
+           
 
-            };
+            var sendToPoll = client.Set(@"/PollingStation/" + PollIdKey, vrs);
+            
 
-            var authKey = FirebaseKeyGenerator.Next();
+            MessageBox.Show("Answer from Auth: " + sendToPoll.ToString());
+        }
 
-
-            var sendToAuth = client.Set(@"/auth/" + authKey, vrs);
-            var sendToVoters = client.Set(@"/voters/" + voterIdKey, vi);
-
-            MessageBox.Show("Answer from Auth: " + sendToAuth.ToString() + '\n' + "Answer from Voter: " + sendToVoters.ToString());
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            regs_items ri = new regs_items();
+            this.Hide();
+            ri.ShowDialog();
         }
 
         private void bunifuDropdown3_onItemSelected(object sender, EventArgs e)
         {
-
-           
-
-            if (bunifuDropdown3.selectedValue =="Sindh")
+            if (bunifuDropdown3.selectedValue == "Sindh")
             {
                 bunifuDropdown2.AddItem("Karachi");
                 bunifuDropdown2.AddItem("Hyderabad");
                 bunifuDropdown2.AddItem("Larkana");
                 bunifuDropdown2.AddItem("Sukkur");
             }
-            else if(bunifuDropdown3.selectedValue == "Baluchistan")
+            else if (bunifuDropdown3.selectedValue == "Baluchistan")
             {
                 bunifuDropdown2.AddItem("Quetta");
                 bunifuDropdown2.AddItem("Ziarat");
@@ -122,7 +104,5 @@ namespace E_Voting_Desktop_Application
                 bunifuDropdown2.AddItem("Abbottabad");
             }
         }
-
-       
     }
 }

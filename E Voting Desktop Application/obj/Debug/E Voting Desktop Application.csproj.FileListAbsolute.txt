@@ -47,3 +47,5 @@ C:\Users\Azam\Desktop\Current\FYP\E-Voting App\E Voting Desktop Application\E Vo
 C:\Users\Azam\Desktop\Current\FYP\E-Voting App\E Voting Desktop Application\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.registeration.resources
 C:\Users\Azam\Desktop\Current\FYP\E-Voting App\E Voting Desktop Application\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.settings.resources
 C:\Users\Azam\Desktop\Current\FYP\E-Voting App\E Voting Desktop Application\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.candidateRegs.resources
+C:\Users\Azam\Desktop\Current\FYP\E-Voting App\E Voting Desktop Application\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.regs_items.resources
+C:\Users\Azam\Desktop\Current\FYP\E-Voting App\E Voting Desktop Application\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.pollingStation_regs.resources
