@@ -1,0 +1,29 @@
+{
+  "name": "sql_node_flutter",
+  "version": "1.0.0",
+  "description": "A node js restful API with SQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon server.js"
+  },
+  "keywords": [
+    "Node",
+    "js",
+    "Restful",
+    "API"
+  ],
+  "author": "Azam",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cryptr": "^6.0.2",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mssql": "^6.3.1",
+    "nodemon": "^2.0.6",
+    "tedious": "^9.2.3"
+  }
+}
