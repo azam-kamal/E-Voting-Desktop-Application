@@ -123,16 +123,16 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="back_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAH9SURBVHhe7d1BSkRBDEXRRvfiPnSJbkHcoThU6zUEQlF+nCQv4D0QuhodVf6/074BAAC4Pa95
-        XfNw/4ZWuvzPNV9r3tewhEYvaz7WfK/RAjRvax7XoJie/Lj8fbQE3oRCOTsaXXo+azFPa1DglJ181t/0
-        PyhwlR2N3gr9Dwr8JTtcfhGyY0R2jMiOEdkxIjtGZMcoshMXvi+A7BQiO0Y5O7rseOLjO9kptGdnXwDZ
-        KUR2jH7LTpzJTqGr7OhMdgqRHSOyY0R2jMiOEdkxIjtGZMeI7BiRHSOyY0R2jMiOEdkxIjtGZMcoZ+e0
-        ALJTKLKjCz8N2SkU2dFF7099XD7ZKRLZyRefF0B2CpEdoz07+xtAdgqdspPPZKdYLEAXfhoW0IAEDaCn
-        XE/7aQH61BJ4E4qRowH2HMVnnMlRg5yjfQH6JEcNyNEAkaP9DYgzOWpAjgYgRwOQowHI0QDkaAByNAA5
-        GoAcDUCOBogc5ac/DzlqkHN0ehvIUQNyNAA5GoAcDUCOBiBHA5CjAa5ypCFHDcjRAKccaeI7OWqw5ygv
-        QEOOGpCjASJH+xsQZ3LUIHJ0WoCGHDUgRwOQowHI0QCRo9MCdCZHDSJHuvDTkKMG5GiAyFF++vNoCfyY
-        Z7HI0f4G6MzP2TY55YgfdG6Wc8RPmptoCfyoPwAA/8Pt9gNvkqzl5Ce8NgAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAf1JREFUeF7t
+        3UFKREEMRdFG9+I+dIluQdyhOFTrNQRCUX6cJC/gPRC6Gh1V/r/TvgEAALg9r3ld83D/hla6/M81X2ve
+        17CERi9rPtZ8r9ECNG9rHtegmJ78uPx9tATehEI5Oxpdej5rMU9rUOCUnXzW3/Q/KHCVHY3eCv0PCvwl
+        O1x+EbJjRHaMyI4R2TEiO0ZkxyiyExe+L4DsFCI7Rjk7uux44uM72Sm0Z2dfANkpRHaMfstOnMlOoavs
+        6Ex2CpEdI7JjRHaMyI4R2TEiO0Zkx4jsGJEdI7JjRHaMyI4R2TEiO0Zkxyhn57QAslMosqMLPw3ZKRTZ
+        0UXvT31cPtkpEtnJF58XQHYKkR2jPTv7G0B2Cp2yk89kp1gsQBd+GhbQgAQNoKdcT/tpAfrUEngTipGj
+        AfYcxWecyVGDnKN9AfokRw3I0QCRo/0NiDM5akCOBiBHA5CjAcjRAORoAHI0ADkagBwNQI4GiBzlpz8P
+        OWqQc3R6G8hRA3I0ADkagBwNQI4GIEcDkKMBrnKkIUcNyNEApxxp4js5arDnKC9AQ44akKMBIkf7GxBn
+        ctQgcnRagIYcNSBHA5CjAcjRAJGj0wJ0JkcNIke68NOQowbkaIDIUX7682gJ/JhnscjR/gbozM/ZNjnl
+        iB90bpZzxE+am2gJ/Kg/AAD/w+32A2+SrOXkJ7w2AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="bunifuGradientPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -364,4 +364,7 @@
         I0b8H9DL/Ke9ZSxrAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
 </root>

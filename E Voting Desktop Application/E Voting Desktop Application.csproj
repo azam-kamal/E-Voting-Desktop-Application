@@ -87,6 +87,8 @@
   <ItemGroup>
     <Compile Include="candidateRegs1.cs" />
     <Compile Include="Connecting.cs" />
+    <Compile Include="ConnectionPollingStation.cs" />
+    <Compile Include="ConnectionVoter.cs" />
     <Compile Include="dashboard.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -7,63 +7,69 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FireSharp.Config;
-using FireSharp.Response;
-using FireSharp.Interfaces;
-using Firebase.Database;
-using Firebase.Database.Http;
-
 namespace E_Voting_Desktop_Application
 {
     public partial class pollingStation_regs : Form
     {
-        IFirebaseClient client;
-        public pollingStation_regs()
-        {
-            InitializeComponent();
-        }
-
-        IFirebaseConfig ifc = new FirebaseConfig()
-        {
-
-            AuthSecret = "cK37opwuVyVL265SeIDQCHm7GVLQsOVZDmvh2U6I",
-            BasePath = "https://election-system-database.firebaseio.com/"
-
-        };
+       
 
         private void pollingStation_regs_Load(object sender, EventArgs e)
         {
-            try
+           /* try
             {
                 client = new FireSharp.FirebaseClient(ifc);
             }
             catch
             {
                 MessageBox.Show("Connection Error");
-            }
+            }*/
         }
-        
+
+        public pollingStation_regs()
+        {
+            InitializeComponent();
+        }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            var PollIdKey = FirebaseKeyGenerator.Next();
-            PollRegs vrs = new PollRegs()
+            if (stationNumberTextBox1.Text == "" && stationNameTextBox2.Text == "" && provinceDropDown1.selectedValue.ToString() == "" && cityDropDown2.selectedValue.ToString() == ""&&addressTextBox3.Text==""&&longitudeTextBox4.Text==""&& latitudeTextBox5.Text=="")
             {
-                StationNo = bunifuMaterialTextbox2.Text,
-                PollSatationName = bunifuMaterialTextbox2.Text,
-                province=bunifuDropdown3.selectedValue,
-                city=bunifuDropdown2.selectedValue,
-                PollSatationAddress = bunifuMaterialTextbox3.Text,
-                longitutde = bunifuMaterialTextbox4.Text,
-                latitude= bunifuMaterialTextbox5.Text
-            };
+                MessageBox.Show("All Fields Are Left Empty");
+            }
+            else if(stationNumberTextBox1.Text == "") {
+                MessageBox.Show("Station Number is empty");
+            }
+            else if (stationNameTextBox2.Text == "")
+            {
+                MessageBox.Show("Station Name is empty");
+            }
+            else if (provinceDropDown1.selectedValue.ToString() == "")
+            {
+                MessageBox.Show("province is not selected");
+            }
+            else if (cityDropDown2.selectedValue.ToString() == "")
+            {
+                MessageBox.Show("city is not selected");
+            }
+            else if (addressTextBox3.Text == "")
+            {
+                MessageBox.Show("address is empty");
+            }
+            else if (longitudeTextBox4.Text == "")
+            {
+                MessageBox.Show("longitude is empty");
+            }
+            else if (latitudeTextBox5.Text == "")
+            {
+                MessageBox.Show("latitude is empty");
+            }
+            else
+            {
+                ConnectionPollingStation cpc = new ConnectionPollingStation();
+                cpc.registerPollingStation(stationNumberTextBox1.Text,stationNameTextBox2.Text,provinceDropDown1.selectedValue.ToString(),cityDropDown2.selectedValue.ToString(),addressTextBox3.Text,longitudeTextBox4.Text,latitudeTextBox5.Text);
+            }
 
-           
 
-            var sendToPoll = client.Set(@"/PollingStation/" + PollIdKey, vrs);
-            
-
-            MessageBox.Show("Answer from Auth: " + sendToPoll.ToString());
         }
 
         private void back_btn_Click(object sender, EventArgs e)
@@ -75,34 +81,44 @@ namespace E_Voting_Desktop_Application
 
         private void bunifuDropdown3_onItemSelected(object sender, EventArgs e)
         {
-            if (bunifuDropdown3.selectedValue == "Sindh")
+            if (provinceDropDown1.selectedValue == "Sindh")
             {
-                bunifuDropdown2.AddItem("Karachi");
-                bunifuDropdown2.AddItem("Hyderabad");
-                bunifuDropdown2.AddItem("Larkana");
-                bunifuDropdown2.AddItem("Sukkur");
+                cityDropDown2.AddItem("Karachi");
+                cityDropDown2.AddItem("Hyderabad");
+                cityDropDown2.AddItem("Larkana");
+                cityDropDown2.AddItem("Sukkur");
             }
-            else if (bunifuDropdown3.selectedValue == "Baluchistan")
+            else if (provinceDropDown1.selectedValue == "Baluchistan")
             {
-                bunifuDropdown2.AddItem("Quetta");
-                bunifuDropdown2.AddItem("Ziarat");
-                bunifuDropdown2.AddItem("Chaman");
-                bunifuDropdown2.AddItem("Sui");
+                cityDropDown2.AddItem("Quetta");
+                cityDropDown2.AddItem("Ziarat");
+                cityDropDown2.AddItem("Chaman");
+                cityDropDown2.AddItem("Sui");
             }
-            else if (bunifuDropdown3.selectedValue == "Punjab")
+            else if (provinceDropDown1.selectedValue == "Punjab")
             {
-                bunifuDropdown2.AddItem("Lahore");
-                bunifuDropdown2.AddItem("Multan");
-                bunifuDropdown2.AddItem("Faisalabad");
-                bunifuDropdown2.AddItem("Bhawalpur");
+                cityDropDown2.AddItem("Lahore");
+                cityDropDown2.AddItem("Multan");
+                cityDropDown2.AddItem("Faisalabad");
+                cityDropDown2.AddItem("Bhawalpur");
             }
-            else if (bunifuDropdown3.selectedValue == "Khyber Pakhtunkhwa")
+            else if (provinceDropDown1.selectedValue == "Khyber Pakhtunkhwa")
             {
-                bunifuDropdown2.AddItem("Peshawar");
-                bunifuDropdown2.AddItem("Mardan");
-                bunifuDropdown2.AddItem("Swat");
-                bunifuDropdown2.AddItem("Abbottabad");
+                cityDropDown2.AddItem("Peshawar");
+                cityDropDown2.AddItem("Mardan");
+                cityDropDown2.AddItem("Swat");
+                cityDropDown2.AddItem("Abbottabad");
             }
+        }
+
+        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void stationNumberTextBox1_OnValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

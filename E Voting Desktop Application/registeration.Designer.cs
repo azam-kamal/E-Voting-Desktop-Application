@@ -42,14 +42,14 @@
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
-            this.bunifuDropdown2 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.voterNameTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.voterNicTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.voterMobileNumberTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.addressTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.pollingStationNumberDropdown3 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cityDropdown2 = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuDropdown3 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.provinceDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
@@ -95,7 +95,7 @@
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(620, 68);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(623, 68);
             this.bunifuGradientPanel1.TabIndex = 2;
             // 
             // label14
@@ -141,7 +141,7 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(257, 411);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(269, 424);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
@@ -214,116 +214,119 @@
             this.bunifuCustomLabel5.TabIndex = 57;
             this.bunifuCustomLabel5.Text = "Mobile Number";
             // 
-            // bunifuMaterialTextbox1
+            // voterNameTextbox1
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuMaterialTextbox1.LineThickness = 2;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(196, 91);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(379, 33);
-            this.bunifuMaterialTextbox1.TabIndex = 58;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.voterNameTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.voterNameTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.voterNameTextbox1.ForeColor = System.Drawing.Color.White;
+            this.voterNameTextbox1.HintForeColor = System.Drawing.Color.Empty;
+            this.voterNameTextbox1.HintText = "";
+            this.voterNameTextbox1.isPassword = false;
+            this.voterNameTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.voterNameTextbox1.LineIdleColor = System.Drawing.Color.Silver;
+            this.voterNameTextbox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.voterNameTextbox1.LineThickness = 2;
+            this.voterNameTextbox1.Location = new System.Drawing.Point(196, 91);
+            this.voterNameTextbox1.Margin = new System.Windows.Forms.Padding(4);
+            this.voterNameTextbox1.Name = "voterNameTextbox1";
+            this.voterNameTextbox1.Size = new System.Drawing.Size(379, 33);
+            this.voterNameTextbox1.TabIndex = 58;
+            this.voterNameTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.voterNameTextbox1.OnValueChanged += new System.EventHandler(this.voterNameTextbox1_OnValueChanged);
             // 
-            // bunifuMaterialTextbox2
+            // voterNicTextbox2
             // 
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox2.HintText = "";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuMaterialTextbox2.LineThickness = 2;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(196, 146);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(379, 33);
-            this.bunifuMaterialTextbox2.TabIndex = 59;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.voterNicTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.voterNicTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.voterNicTextbox2.ForeColor = System.Drawing.Color.White;
+            this.voterNicTextbox2.HintForeColor = System.Drawing.Color.Empty;
+            this.voterNicTextbox2.HintText = "";
+            this.voterNicTextbox2.isPassword = false;
+            this.voterNicTextbox2.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.voterNicTextbox2.LineIdleColor = System.Drawing.Color.Silver;
+            this.voterNicTextbox2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.voterNicTextbox2.LineThickness = 2;
+            this.voterNicTextbox2.Location = new System.Drawing.Point(196, 146);
+            this.voterNicTextbox2.Margin = new System.Windows.Forms.Padding(4);
+            this.voterNicTextbox2.Name = "voterNicTextbox2";
+            this.voterNicTextbox2.Size = new System.Drawing.Size(379, 33);
+            this.voterNicTextbox2.TabIndex = 59;
+            this.voterNicTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMaterialTextbox3
+            // voterMobileNumberTextbox4
             // 
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox3.HintText = "";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuMaterialTextbox3.LineThickness = 2;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(196, 358);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(379, 33);
-            this.bunifuMaterialTextbox3.TabIndex = 60;
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.voterMobileNumberTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.voterMobileNumberTextbox4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.voterMobileNumberTextbox4.ForeColor = System.Drawing.Color.White;
+            this.voterMobileNumberTextbox4.HintForeColor = System.Drawing.Color.Empty;
+            this.voterMobileNumberTextbox4.HintText = "";
+            this.voterMobileNumberTextbox4.isPassword = false;
+            this.voterMobileNumberTextbox4.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.voterMobileNumberTextbox4.LineIdleColor = System.Drawing.Color.Silver;
+            this.voterMobileNumberTextbox4.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.voterMobileNumberTextbox4.LineThickness = 2;
+            this.voterMobileNumberTextbox4.Location = new System.Drawing.Point(196, 358);
+            this.voterMobileNumberTextbox4.Margin = new System.Windows.Forms.Padding(4);
+            this.voterMobileNumberTextbox4.Name = "voterMobileNumberTextbox4";
+            this.voterMobileNumberTextbox4.Size = new System.Drawing.Size(379, 33);
+            this.voterMobileNumberTextbox4.TabIndex = 60;
+            this.voterMobileNumberTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMaterialTextbox5
+            // addressTextbox3
             // 
-            this.bunifuMaterialTextbox5.AutoSize = true;
-            this.bunifuMaterialTextbox5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bunifuMaterialTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox5.ForeColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox5.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox5.HintText = "";
-            this.bunifuMaterialTextbox5.isPassword = false;
-            this.bunifuMaterialTextbox5.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuMaterialTextbox5.LineThickness = 2;
-            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(196, 261);
-            this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
-            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(379, 28);
-            this.bunifuMaterialTextbox5.TabIndex = 62;
-            this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.addressTextbox3.AutoSize = true;
+            this.addressTextbox3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.addressTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.addressTextbox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.addressTextbox3.ForeColor = System.Drawing.Color.White;
+            this.addressTextbox3.HintForeColor = System.Drawing.Color.Empty;
+            this.addressTextbox3.HintText = "";
+            this.addressTextbox3.isPassword = false;
+            this.addressTextbox3.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.addressTextbox3.LineIdleColor = System.Drawing.Color.Silver;
+            this.addressTextbox3.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.addressTextbox3.LineThickness = 2;
+            this.addressTextbox3.Location = new System.Drawing.Point(196, 261);
+            this.addressTextbox3.Margin = new System.Windows.Forms.Padding(4);
+            this.addressTextbox3.Name = "addressTextbox3";
+            this.addressTextbox3.Size = new System.Drawing.Size(379, 28);
+            this.addressTextbox3.TabIndex = 62;
+            this.addressTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuDropdown1
+            // pollingStationNumberDropdown3
             // 
-            this.bunifuDropdown1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.BorderRadius = 3;
-            this.bunifuDropdown1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.bunifuDropdown1.DisabledColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.Items = new string[] {
+            this.pollingStationNumberDropdown3.BackColor = System.Drawing.Color.Transparent;
+            this.pollingStationNumberDropdown3.BorderRadius = 3;
+            this.pollingStationNumberDropdown3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pollingStationNumberDropdown3.DisabledColor = System.Drawing.Color.Transparent;
+            this.pollingStationNumberDropdown3.ForeColor = System.Drawing.Color.White;
+            this.pollingStationNumberDropdown3.Items = new string[] {
         "NA-235"};
-            this.bunifuDropdown1.Location = new System.Drawing.Point(196, 315);
-            this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.NomalColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuDropdown1.selectedIndex = -1;
-            this.bunifuDropdown1.Size = new System.Drawing.Size(379, 35);
-            this.bunifuDropdown1.TabIndex = 63;
+            this.pollingStationNumberDropdown3.Location = new System.Drawing.Point(196, 315);
+            this.pollingStationNumberDropdown3.Name = "pollingStationNumberDropdown3";
+            this.pollingStationNumberDropdown3.NomalColor = System.Drawing.Color.Transparent;
+            this.pollingStationNumberDropdown3.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.pollingStationNumberDropdown3.selectedIndex = -1;
+            this.pollingStationNumberDropdown3.Size = new System.Drawing.Size(379, 35);
+            this.pollingStationNumberDropdown3.TabIndex = 63;
+            this.pollingStationNumberDropdown3.onItemSelected += new System.EventHandler(this.bunifuDropdown1_onItemSelected);
             // 
-            // bunifuDropdown2
+            // cityDropdown2
             // 
-            this.bunifuDropdown2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown2.BorderRadius = 3;
-            this.bunifuDropdown2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.bunifuDropdown2.DisabledColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown2.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown2.Items = new string[0];
-            this.bunifuDropdown2.Location = new System.Drawing.Point(428, 214);
-            this.bunifuDropdown2.Name = "bunifuDropdown2";
-            this.bunifuDropdown2.NomalColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown2.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuDropdown2.selectedIndex = -1;
-            this.bunifuDropdown2.Size = new System.Drawing.Size(146, 35);
-            this.bunifuDropdown2.TabIndex = 65;
+            this.cityDropdown2.BackColor = System.Drawing.Color.Transparent;
+            this.cityDropdown2.BorderRadius = 3;
+            this.cityDropdown2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.cityDropdown2.DisabledColor = System.Drawing.Color.Transparent;
+            this.cityDropdown2.ForeColor = System.Drawing.Color.White;
+            this.cityDropdown2.Items = new string[0];
+            this.cityDropdown2.Location = new System.Drawing.Point(428, 214);
+            this.cityDropdown2.Name = "cityDropdown2";
+            this.cityDropdown2.NomalColor = System.Drawing.Color.Transparent;
+            this.cityDropdown2.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.cityDropdown2.selectedIndex = -1;
+            this.cityDropdown2.Size = new System.Drawing.Size(146, 35);
+            this.cityDropdown2.TabIndex = 65;
+            this.cityDropdown2.onItemSelected += new System.EventHandler(this.bunifuDropdown2_onItemSelected);
             // 
             // bunifuCustomLabel6
             // 
@@ -338,26 +341,26 @@
             this.bunifuCustomLabel6.TabIndex = 64;
             this.bunifuCustomLabel6.Text = "City";
             // 
-            // bunifuDropdown3
+            // provinceDropdown1
             // 
-            this.bunifuDropdown3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown3.BorderRadius = 3;
-            this.bunifuDropdown3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.bunifuDropdown3.DisabledColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown3.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown3.Items = new string[] {
+            this.provinceDropdown1.BackColor = System.Drawing.Color.Transparent;
+            this.provinceDropdown1.BorderRadius = 3;
+            this.provinceDropdown1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.provinceDropdown1.DisabledColor = System.Drawing.Color.Transparent;
+            this.provinceDropdown1.ForeColor = System.Drawing.Color.White;
+            this.provinceDropdown1.Items = new string[] {
         "Sindh",
         "Baluchistan",
         "Punjab",
         "Khyber Pakhtunkhwa"};
-            this.bunifuDropdown3.Location = new System.Drawing.Point(146, 214);
-            this.bunifuDropdown3.Name = "bunifuDropdown3";
-            this.bunifuDropdown3.NomalColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown3.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuDropdown3.selectedIndex = -1;
-            this.bunifuDropdown3.Size = new System.Drawing.Size(146, 35);
-            this.bunifuDropdown3.TabIndex = 67;
-            this.bunifuDropdown3.onItemSelected += new System.EventHandler(this.bunifuDropdown3_onItemSelected);
+            this.provinceDropdown1.Location = new System.Drawing.Point(146, 214);
+            this.provinceDropdown1.Name = "provinceDropdown1";
+            this.provinceDropdown1.NomalColor = System.Drawing.Color.Transparent;
+            this.provinceDropdown1.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.provinceDropdown1.selectedIndex = -1;
+            this.provinceDropdown1.Size = new System.Drawing.Size(146, 35);
+            this.provinceDropdown1.TabIndex = 67;
+            this.provinceDropdown1.onItemSelected += new System.EventHandler(this.bunifuDropdown3_onItemSelected);
             // 
             // bunifuCustomLabel7
             // 
@@ -377,16 +380,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(37)))));
-            this.ClientSize = new System.Drawing.Size(620, 464);
-            this.Controls.Add(this.bunifuDropdown3);
+            this.ClientSize = new System.Drawing.Size(623, 526);
+            this.Controls.Add(this.provinceDropdown1);
             this.Controls.Add(this.bunifuCustomLabel7);
-            this.Controls.Add(this.bunifuDropdown2);
+            this.Controls.Add(this.cityDropdown2);
             this.Controls.Add(this.bunifuCustomLabel6);
-            this.Controls.Add(this.bunifuDropdown1);
-            this.Controls.Add(this.bunifuMaterialTextbox5);
-            this.Controls.Add(this.bunifuMaterialTextbox3);
-            this.Controls.Add(this.bunifuMaterialTextbox2);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.pollingStationNumberDropdown3);
+            this.Controls.Add(this.addressTextbox3);
+            this.Controls.Add(this.voterMobileNumberTextbox4);
+            this.Controls.Add(this.voterNicTextbox2);
+            this.Controls.Add(this.voterNameTextbox1);
             this.Controls.Add(this.bunifuCustomLabel5);
             this.Controls.Add(this.bunifuCustomLabel4);
             this.Controls.Add(this.bunifuCustomLabel3);
@@ -421,14 +424,14 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox5;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown1;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown2;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox voterNameTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox voterNicTextbox2;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox voterMobileNumberTextbox4;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox addressTextbox3;
+        private Bunifu.Framework.UI.BunifuDropdown pollingStationNumberDropdown3;
+        private Bunifu.Framework.UI.BunifuDropdown cityDropdown2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown3;
+        private Bunifu.Framework.UI.BunifuDropdown provinceDropdown1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
     }
 }

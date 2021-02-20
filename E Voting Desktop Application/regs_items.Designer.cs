@@ -1,4 +1,4 @@
-﻿namespace E_Voting_Desktop_Application
+﻿ namespace E_Voting_Desktop_Application
 {
     partial class regs_items
     {
