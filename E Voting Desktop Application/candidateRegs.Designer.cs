@@ -35,28 +35,28 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.nationalAssemblyCheckBox1 = new System.Windows.Forms.CheckBox();
+            this.provincialAssemblyCheckBox2 = new System.Windows.Forms.CheckBox();
+            this.fullNameTextBox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.CNICTextBox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuDropdown3 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.partyDropDown3 = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.AgeNumericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bunifuDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
-            this.bunifuDropdown2 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.pollingStationDropDown3 = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuDropdown4 = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.provinceDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cityDropDown2 = new Bunifu.Framework.UI.BunifuDropdown();
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AgeNumericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuSeparator1
@@ -132,48 +132,48 @@
             this.label5.Size = new System.Drawing.Size(0, 13);
             this.label5.TabIndex = 35;
             // 
-            // checkBox1
+            // nationalAssemblyCheckBox1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(165, 386);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(158, 24);
-            this.checkBox1.TabIndex = 40;
-            this.checkBox1.Text = "National Assembly";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.nationalAssemblyCheckBox1.AutoSize = true;
+            this.nationalAssemblyCheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nationalAssemblyCheckBox1.ForeColor = System.Drawing.Color.White;
+            this.nationalAssemblyCheckBox1.Location = new System.Drawing.Point(165, 386);
+            this.nationalAssemblyCheckBox1.Name = "nationalAssemblyCheckBox1";
+            this.nationalAssemblyCheckBox1.Size = new System.Drawing.Size(158, 24);
+            this.nationalAssemblyCheckBox1.TabIndex = 40;
+            this.nationalAssemblyCheckBox1.Text = "National Assembly";
+            this.nationalAssemblyCheckBox1.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // provincialAssemblyCheckBox2
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(377, 386);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(159, 22);
-            this.checkBox2.TabIndex = 41;
-            this.checkBox2.Text = "Provincial Assembly";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.provincialAssemblyCheckBox2.AutoSize = true;
+            this.provincialAssemblyCheckBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.provincialAssemblyCheckBox2.ForeColor = System.Drawing.Color.White;
+            this.provincialAssemblyCheckBox2.Location = new System.Drawing.Point(377, 386);
+            this.provincialAssemblyCheckBox2.Name = "provincialAssemblyCheckBox2";
+            this.provincialAssemblyCheckBox2.Size = new System.Drawing.Size(159, 22);
+            this.provincialAssemblyCheckBox2.TabIndex = 41;
+            this.provincialAssemblyCheckBox2.Text = "Provincial Assembly";
+            this.provincialAssemblyCheckBox2.UseVisualStyleBackColor = true;
             // 
-            // bunifuMaterialTextbox1
+            // fullNameTextBox1
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuMaterialTextbox1.LineThickness = 2;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(157, 95);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(379, 33);
-            this.bunifuMaterialTextbox1.TabIndex = 60;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.fullNameTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.fullNameTextBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.fullNameTextBox1.ForeColor = System.Drawing.Color.White;
+            this.fullNameTextBox1.HintForeColor = System.Drawing.Color.Empty;
+            this.fullNameTextBox1.HintText = "";
+            this.fullNameTextBox1.isPassword = false;
+            this.fullNameTextBox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.fullNameTextBox1.LineIdleColor = System.Drawing.Color.Silver;
+            this.fullNameTextBox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.fullNameTextBox1.LineThickness = 2;
+            this.fullNameTextBox1.Location = new System.Drawing.Point(157, 95);
+            this.fullNameTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.fullNameTextBox1.Name = "fullNameTextBox1";
+            this.fullNameTextBox1.Size = new System.Drawing.Size(379, 33);
+            this.fullNameTextBox1.TabIndex = 60;
+            this.fullNameTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuCustomLabel1
             // 
@@ -188,24 +188,24 @@
             this.bunifuCustomLabel1.TabIndex = 59;
             this.bunifuCustomLabel1.Text = "Full Name";
             // 
-            // bunifuMaterialTextbox2
+            // CNICTextBox2
             // 
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox2.HintText = "";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuMaterialTextbox2.LineThickness = 2;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(157, 142);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(379, 33);
-            this.bunifuMaterialTextbox2.TabIndex = 62;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.CNICTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CNICTextBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.CNICTextBox2.ForeColor = System.Drawing.Color.White;
+            this.CNICTextBox2.HintForeColor = System.Drawing.Color.Empty;
+            this.CNICTextBox2.HintText = "";
+            this.CNICTextBox2.isPassword = false;
+            this.CNICTextBox2.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.CNICTextBox2.LineIdleColor = System.Drawing.Color.Silver;
+            this.CNICTextBox2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.CNICTextBox2.LineThickness = 2;
+            this.CNICTextBox2.Location = new System.Drawing.Point(157, 142);
+            this.CNICTextBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.CNICTextBox2.Name = "CNICTextBox2";
+            this.CNICTextBox2.Size = new System.Drawing.Size(379, 33);
+            this.CNICTextBox2.TabIndex = 62;
+            this.CNICTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuCustomLabel2
             // 
@@ -233,27 +233,27 @@
             this.bunifuCustomLabel3.TabIndex = 63;
             this.bunifuCustomLabel3.Text = "Party";
             // 
-            // bunifuDropdown3
+            // partyDropDown3
             // 
-            this.bunifuDropdown3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown3.BorderRadius = 3;
-            this.bunifuDropdown3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.bunifuDropdown3.DisabledColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown3.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown3.Items = new string[] {
+            this.partyDropDown3.BackColor = System.Drawing.Color.Transparent;
+            this.partyDropDown3.BorderRadius = 3;
+            this.partyDropDown3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.partyDropDown3.DisabledColor = System.Drawing.Color.Transparent;
+            this.partyDropDown3.ForeColor = System.Drawing.Color.White;
+            this.partyDropDown3.Items = new string[] {
         "PSP",
         "MQM",
         "PTI",
         "PML (N)",
         "PPP",
         "Independent"};
-            this.bunifuDropdown3.Location = new System.Drawing.Point(157, 308);
-            this.bunifuDropdown3.Name = "bunifuDropdown3";
-            this.bunifuDropdown3.NomalColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown3.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuDropdown3.selectedIndex = -1;
-            this.bunifuDropdown3.Size = new System.Drawing.Size(379, 35);
-            this.bunifuDropdown3.TabIndex = 68;
+            this.partyDropDown3.Location = new System.Drawing.Point(157, 308);
+            this.partyDropDown3.Name = "partyDropDown3";
+            this.partyDropDown3.NomalColor = System.Drawing.Color.Transparent;
+            this.partyDropDown3.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.partyDropDown3.selectedIndex = -1;
+            this.partyDropDown3.Size = new System.Drawing.Size(379, 35);
+            this.partyDropDown3.TabIndex = 68;
             // 
             // bunifuCustomLabel4
             // 
@@ -268,21 +268,22 @@
             this.bunifuCustomLabel4.TabIndex = 69;
             this.bunifuCustomLabel4.Text = "Age";
             // 
-            // numericUpDown1
+            // AgeNumericUpDown1
             // 
-            this.numericUpDown1.AllowDrop = true;
-            this.numericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(37)))));
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.ForeColor = System.Drawing.Color.White;
-            this.numericUpDown1.Location = new System.Drawing.Point(157, 202);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(379, 24);
-            this.numericUpDown1.TabIndex = 70;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.AgeNumericUpDown1.AllowDrop = true;
+            this.AgeNumericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(37)))));
+            this.AgeNumericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgeNumericUpDown1.ForeColor = System.Drawing.Color.White;
+            this.AgeNumericUpDown1.Location = new System.Drawing.Point(157, 202);
+            this.AgeNumericUpDown1.Name = "AgeNumericUpDown1";
+            this.AgeNumericUpDown1.Size = new System.Drawing.Size(379, 24);
+            this.AgeNumericUpDown1.TabIndex = 70;
+            this.AgeNumericUpDown1.Value = new decimal(new int[] {
             25,
             0,
             0,
             0});
+            this.AgeNumericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // bunifuThinButton21
             // 
@@ -348,44 +349,24 @@
             this.bunifuSeparator2.Transparency = 255;
             this.bunifuSeparator2.Vertical = true;
             // 
-            // bunifuDropdown1
+            // pollingStationDropDown3
             // 
-            this.bunifuDropdown1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.BorderRadius = 3;
-            this.bunifuDropdown1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.bunifuDropdown1.DisabledColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.Items = new string[] {
+            this.pollingStationDropDown3.BackColor = System.Drawing.Color.Transparent;
+            this.pollingStationDropDown3.BorderRadius = 3;
+            this.pollingStationDropDown3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pollingStationDropDown3.DisabledColor = System.Drawing.Color.Transparent;
+            this.pollingStationDropDown3.ForeColor = System.Drawing.Color.White;
+            this.pollingStationDropDown3.Items = new string[] {
         "NA-245",
         "NA-255"};
-            this.bunifuDropdown1.Location = new System.Drawing.Point(156, 419);
-            this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.NomalColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuDropdown1.selectedIndex = -1;
-            this.bunifuDropdown1.Size = new System.Drawing.Size(379, 35);
-            this.bunifuDropdown1.TabIndex = 76;
-            // 
-            // bunifuDropdown2
-            // 
-            this.bunifuDropdown2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown2.BorderRadius = 3;
-            this.bunifuDropdown2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.bunifuDropdown2.DisabledColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown2.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown2.Items = new string[] {
-        "Sindh",
-        "Baluchistan",
-        "Punjab",
-        "Khyber Pakhtunkhwa"};
-            this.bunifuDropdown2.Location = new System.Drawing.Point(131, 251);
-            this.bunifuDropdown2.Name = "bunifuDropdown2";
-            this.bunifuDropdown2.NomalColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown2.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuDropdown2.selectedIndex = -1;
-            this.bunifuDropdown2.Size = new System.Drawing.Size(146, 35);
-            this.bunifuDropdown2.TabIndex = 80;
-            this.bunifuDropdown2.onItemSelected += new System.EventHandler(this.bunifuDropdown2_onItemSelected);
+            this.pollingStationDropDown3.Location = new System.Drawing.Point(156, 419);
+            this.pollingStationDropDown3.Name = "pollingStationDropDown3";
+            this.pollingStationDropDown3.NomalColor = System.Drawing.Color.Transparent;
+            this.pollingStationDropDown3.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.pollingStationDropDown3.selectedIndex = -1;
+            this.pollingStationDropDown3.Size = new System.Drawing.Size(379, 35);
+            this.pollingStationDropDown3.TabIndex = 76;
+            this.pollingStationDropDown3.onItemSelected += new System.EventHandler(this.pollingStationDropDown3_onItemSelected);
             // 
             // bunifuCustomLabel7
             // 
@@ -400,22 +381,6 @@
             this.bunifuCustomLabel7.TabIndex = 79;
             this.bunifuCustomLabel7.Text = "Province";
             // 
-            // bunifuDropdown4
-            // 
-            this.bunifuDropdown4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown4.BorderRadius = 3;
-            this.bunifuDropdown4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.bunifuDropdown4.DisabledColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown4.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown4.Items = new string[0];
-            this.bunifuDropdown4.Location = new System.Drawing.Point(413, 251);
-            this.bunifuDropdown4.Name = "bunifuDropdown4";
-            this.bunifuDropdown4.NomalColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown4.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.bunifuDropdown4.selectedIndex = -1;
-            this.bunifuDropdown4.Size = new System.Drawing.Size(146, 35);
-            this.bunifuDropdown4.TabIndex = 78;
-            // 
             // bunifuCustomLabel8
             // 
             this.bunifuCustomLabel8.AutoSize = true;
@@ -429,31 +394,69 @@
             this.bunifuCustomLabel8.TabIndex = 77;
             this.bunifuCustomLabel8.Text = "City";
             // 
+            // provinceDropdown1
+            // 
+            this.provinceDropdown1.BackColor = System.Drawing.Color.Transparent;
+            this.provinceDropdown1.BorderRadius = 3;
+            this.provinceDropdown1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.provinceDropdown1.DisabledColor = System.Drawing.Color.Transparent;
+            this.provinceDropdown1.ForeColor = System.Drawing.Color.White;
+            this.provinceDropdown1.Items = new string[] {
+        "Sindh",
+        "Baluchistan",
+        "Punjab",
+        "Khyber Pakhtunkhwa"};
+            this.provinceDropdown1.Location = new System.Drawing.Point(157, 251);
+            this.provinceDropdown1.Name = "provinceDropdown1";
+            this.provinceDropdown1.NomalColor = System.Drawing.Color.Transparent;
+            this.provinceDropdown1.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.provinceDropdown1.selectedIndex = -1;
+            this.provinceDropdown1.Size = new System.Drawing.Size(146, 35);
+            this.provinceDropdown1.TabIndex = 80;
+            this.provinceDropdown1.onItemSelected += new System.EventHandler(this.provinceDropdown1_onItemSelected);
+            // 
+            // cityDropDown2
+            // 
+            this.cityDropDown2.BackColor = System.Drawing.Color.Transparent;
+            this.cityDropDown2.BorderRadius = 3;
+            this.cityDropDown2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.cityDropDown2.DisabledColor = System.Drawing.Color.Transparent;
+            this.cityDropDown2.ForeColor = System.Drawing.Color.White;
+            this.cityDropDown2.Items = new string[0];
+            this.cityDropDown2.Location = new System.Drawing.Point(419, 251);
+            this.cityDropDown2.Name = "cityDropDown2";
+            this.cityDropDown2.NomalColor = System.Drawing.Color.Transparent;
+            this.cityDropDown2.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.cityDropDown2.selectedIndex = -1;
+            this.cityDropDown2.Size = new System.Drawing.Size(146, 35);
+            this.cityDropDown2.TabIndex = 81;
+            this.cityDropDown2.onItemSelected += new System.EventHandler(this.cityDropdown2_onItemSelected_1);
+            // 
             // CandidateRegs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(37)))));
             this.ClientSize = new System.Drawing.Size(577, 511);
-            this.Controls.Add(this.bunifuDropdown2);
+            this.Controls.Add(this.cityDropDown2);
+            this.Controls.Add(this.provinceDropdown1);
             this.Controls.Add(this.bunifuCustomLabel7);
-            this.Controls.Add(this.bunifuDropdown4);
             this.Controls.Add(this.bunifuCustomLabel8);
-            this.Controls.Add(this.bunifuDropdown1);
+            this.Controls.Add(this.pollingStationDropDown3);
             this.Controls.Add(this.bunifuSeparator2);
             this.Controls.Add(this.bunifuCustomLabel6);
             this.Controls.Add(this.bunifuCustomLabel5);
             this.Controls.Add(this.bunifuThinButton21);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.AgeNumericUpDown1);
             this.Controls.Add(this.bunifuCustomLabel4);
-            this.Controls.Add(this.bunifuDropdown3);
+            this.Controls.Add(this.partyDropDown3);
             this.Controls.Add(this.bunifuCustomLabel3);
-            this.Controls.Add(this.bunifuMaterialTextbox2);
+            this.Controls.Add(this.CNICTextBox2);
             this.Controls.Add(this.bunifuCustomLabel2);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.fullNameTextBox1);
             this.Controls.Add(this.bunifuCustomLabel1);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.provincialAssemblyCheckBox2);
+            this.Controls.Add(this.nationalAssemblyCheckBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.bunifuGradientPanel1);
@@ -464,7 +467,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AgeNumericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -478,24 +481,24 @@
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private System.Windows.Forms.PictureBox back_btn;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private System.Windows.Forms.CheckBox nationalAssemblyCheckBox1;
+        private System.Windows.Forms.CheckBox provincialAssemblyCheckBox2;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox fullNameTextBox1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox CNICTextBox2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown3;
+        private Bunifu.Framework.UI.BunifuDropdown partyDropDown3;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown AgeNumericUpDown1;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown1;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown2;
+        private Bunifu.Framework.UI.BunifuDropdown pollingStationDropDown3;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown4;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
+        private Bunifu.Framework.UI.BunifuDropdown provinceDropdown1;
+        private Bunifu.Framework.UI.BunifuDropdown cityDropDown2;
     }
 }

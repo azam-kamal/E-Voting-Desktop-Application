@@ -72,7 +72,7 @@ router.post('/register', async (req, res, next) => {
     }
 })
 
-//Login Voter
+// Login Voter
 // router.post('/login', async (req, res, next) => {
 //     if (req.body.voter_nic != null && req.body.voter_mobile_number != null) {
 //         const result = await getpool()
@@ -128,12 +128,11 @@ router.post('/register', async (req, res, next) => {
 //         })
 //     }
 // })
+
 router.post('/login', async (req, res, next) => {
     console.log('Al Hamdullilah')
     console.log(req.body.voter_nic)
     console.log(req.body.voter_mobile_number)
-
-
     if (req.body.voter_nic != null && req.body.voter_mobile_number != null) {
         const result = await getpool()
         result.input('voter_nic', sql.VarChar(50), req.body.voter_nic).input('voter_mobile_number', sql.VarChar(50), req.body.voter_mobile_number).output('responseMessage', sql.VarChar(50), 'Success').execute('voters_Authentication_Stored_Procedures', function (error, voterData) {
@@ -143,16 +142,16 @@ router.post('/login', async (req, res, next) => {
                 })
             }
             else {
-                // console.log(voterData['output']['responseMessage'])
                 if (voterData['output']['responseMessage']=='success') {
                     res.status(200).json({
-                        voterId: voterData['recordset'][0]['voter_Id'],
+                        voterId: voterData['recordset'][0]['voter_id'],
                         voterName: voterData['recordset'][0]['voter_name'],
                         voterNic: voterData['recordset'][0]['voter_nic'],
                         voterMobileNumber: voterData['recordset'][0]['voter_mobile_number'],
                         voterProvince: voterData['recordset'][0]['voter_province'],
                         voterCity: voterData['recordset'][0]['voter_city'],
                         voterAddress: voterData['recordset'][0]['voterAddress'],
+                        pollingStationId:voterData['recordset'][0]['voter_polling_station_number'],
                         voterPollingStationNumber: voterData['recordset'][0]['station_Number'],
                         voterNationalAssemblyVoteCast: voterData['recordset'][0]['voter_national_assembly_vote_cast'],
                         voterProvincialAssemblyVoteCast: voterData['recordset'][0]['voter_provincial_assembly_vote_cast'],
@@ -175,7 +174,4 @@ router.post('/login', async (req, res, next) => {
         })
     }
 })
-
-
-
 module.exports = router
