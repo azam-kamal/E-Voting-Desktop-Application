@@ -400,6 +400,7 @@
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "registeration";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "registeration";
             this.Load += new System.EventHandler(this.registeration_Load);
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).EndInit();

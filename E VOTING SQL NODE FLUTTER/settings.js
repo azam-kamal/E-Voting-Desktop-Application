@@ -1,7 +1,7 @@
 exports.dbConfig = {
-    'user': 'siddiqui',
-    'password': 'ahmed123',
-    'server': 'User-PC',
+    'user': 'saa',
+    'password': 'azam.kamal3',
+    'server': 'AZAM-PC',
     'database': 'E_VOTING_DATABASE',
     options: {
     enableArithAbort: false,

@@ -16,7 +16,7 @@ namespace E_Voting_Desktop_Application
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new regs_items());
+            Application.Run(new login());
         }
     }
 }

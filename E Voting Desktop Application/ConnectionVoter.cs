@@ -11,7 +11,7 @@ namespace E_Voting_Desktop_Application
 {
     public class ConnectionVoter
     {
-        SqlConnection MyConnection = new SqlConnection(@"Data Source=USER-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
+        SqlConnection MyConnection = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
         SqlCommand command;
 
     public void registerVoter(String voterName,String voterNIC,String voterMobileNumber,String voterProvince,String voterCity,String voterAddress,String voterPollingStationNumber,int voterNationalAssemblyVoteCast,int voterProvincialAssemblyVoteCast)

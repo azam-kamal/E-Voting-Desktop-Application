@@ -12,7 +12,7 @@ namespace E_Voting_Desktop_Application
 {
    public class ConnectionCandidates
     {
-        SqlConnection MyConnection = new SqlConnection(@"Data Source=USER-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
+        SqlConnection MyConnection = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
         SqlCommand command;
         public void registerCandidate(String name,String nic,String age,String province,String city,String pollingStationNumber,String party,String representation)
         {

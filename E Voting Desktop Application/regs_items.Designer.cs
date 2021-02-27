@@ -184,6 +184,7 @@
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "regs_items";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "regs_items";
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
