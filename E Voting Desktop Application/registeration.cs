@@ -15,6 +15,10 @@ namespace E_Voting_Desktop_Application
 
         SqlConnection MyConnection = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
         SqlCommand command;
+
+        /// <summary>
+        /// //////////////////////////////////
+        /// </summary>
         String id;
         int btnClick = 0;
         public registeration()
@@ -74,6 +78,9 @@ namespace E_Voting_Desktop_Application
             {
                 ConnectionVoter cv = new ConnectionVoter();
                 cv.registerVoter(voterNameTextbox1.Text,voterNicTextbox2.Text,voterMobileNumberTextbox4.Text,provinceDropdown1.selectedValue.ToString(),cityDropdown2.selectedValue.ToString(),addressTextbox3.Text,id,0,0);
+                enroll en = new enroll();
+                this.Hide();
+                en.ShowDialog();
             }
 
 

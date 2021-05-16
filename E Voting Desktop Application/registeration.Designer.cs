@@ -141,7 +141,7 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(269, 424);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(403, 418);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
@@ -380,7 +380,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(37)))));
-            this.ClientSize = new System.Drawing.Size(623, 526);
+            this.ClientSize = new System.Drawing.Size(623, 487);
             this.Controls.Add(this.provinceDropdown1);
             this.Controls.Add(this.bunifuCustomLabel7);
             this.Controls.Add(this.cityDropdown2);
