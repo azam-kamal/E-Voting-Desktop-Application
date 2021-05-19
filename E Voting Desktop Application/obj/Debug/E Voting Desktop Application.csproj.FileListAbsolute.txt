@@ -189,3 +189,8 @@ C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E Voting Desktop Applicati
 C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E Voting Desktop Application.pdb
 C:\FYP\Desktop\E Voting Desktop Application\bin\Debug\libzkfpcsharp.dll
 C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.enroll.resources
+C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.voter_cast3.resources
+C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.vote_cast.resources
+C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.vote_cast2.resources
+C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.voting_items.resources
+C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.voting_place.resources

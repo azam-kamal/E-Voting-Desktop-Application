@@ -16,5 +16,12 @@ namespace E_Voting_Desktop_Application
         {
             InitializeComponent();
         }
+
+        private void bunifuTileButton3_Click(object sender, EventArgs e)
+        {
+            voting_place ass = new voting_place();
+            this.Hide();
+            ass.ShowDialog();
+        }
     }
 }

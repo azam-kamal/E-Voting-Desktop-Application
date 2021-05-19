@@ -412,5 +412,10 @@ namespace E_Voting_Desktop_Application
                 textRes.AppendText("Please press your finger!\n");
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

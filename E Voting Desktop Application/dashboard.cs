@@ -208,5 +208,12 @@ namespace E_Voting_Desktop_Application
         {
             Application.Exit();
         }
+
+        private void bunifuTileButton5_Click(object sender, EventArgs e)
+        {
+            voting_items ass = new voting_items();
+            this.Hide();
+            ass.ShowDialog();
+        }
     }
 }

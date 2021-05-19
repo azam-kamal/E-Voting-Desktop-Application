@@ -46,6 +46,15 @@ namespace E_Voting_Desktop_Application
             InitializeComponent();
         }
 
+        public voter_cast3(string v1, string v2, string text1, string v, string text2)
+        {
+            this.v1 = v1;
+            this.v2 = v2;
+            this.text1 = text1;
+            this.v3 = v3;
+            this.text2 = text2;
+        }
+
 
 
         //Iss Func se Ap Current FingerPrint Uthaa te hen jo recently Press hua ho
@@ -64,6 +73,12 @@ namespace E_Voting_Desktop_Application
         }
 
         string template;
+        private string v1;
+        private string v2;
+        private string text1;
+        private string v3;
+        private string text2;
+
         //Yahan se Database me Add or match ka scene he
         protected override void DefWndProc(ref Message m)
         {
@@ -112,6 +127,8 @@ namespace E_Voting_Desktop_Application
                                         zkfp2.SetParameters(mDevHandle, 102, paramValue2, 4);
 
                                         MessageBox.Show("YOUR VOTE HAS BEING CASTED!\n");
+
+                                    //DATABSE ME ADD KARNA HE IDHAR SE
                                     bIsTimeToDie = true;
                                     zkfp2.Terminate();
                                     vote_cast d = new vote_cast();
@@ -169,6 +186,14 @@ namespace E_Voting_Desktop_Application
 
         private void voter_cast3_Load(object sender, EventArgs e)
         {
+            //Values load up
+
+            label7.Text = v2;
+            label12.Text = v3;
+            label8.Text = text1;
+            label11.Text = text2;
+            //////////////////////////////////////////
+
             SqlConnection MyConnection = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
             SqlCommand cmd;
             cmd = new SqlCommand("[lastvoter]", MyConnection);

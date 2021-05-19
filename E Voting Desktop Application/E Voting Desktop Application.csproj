@@ -147,6 +147,36 @@
     </Compile>
     <Compile Include="VoterInfo.cs" />
     <Compile Include="VoterRegs.cs" />
+    <Compile Include="voter_cast3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="voter_cast3.Designer.cs">
+      <DependentUpon>voter_cast3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vote_cast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vote_cast.Designer.cs">
+      <DependentUpon>vote_cast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vote_cast2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vote_cast2.Designer.cs">
+      <DependentUpon>vote_cast2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="voting_items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="voting_items.Designer.cs">
+      <DependentUpon>voting_items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="voting_place.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="voting_place.Designer.cs">
+      <DependentUpon>voting_place.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +209,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="settings.resx">
       <DependentUpon>settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="voter_cast3.resx">
+      <DependentUpon>voter_cast3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vote_cast.resx">
+      <DependentUpon>vote_cast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vote_cast2.resx">
+      <DependentUpon>vote_cast2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="voting_items.resx">
+      <DependentUpon>voting_items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="voting_place.resx">
+      <DependentUpon>voting_place.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
