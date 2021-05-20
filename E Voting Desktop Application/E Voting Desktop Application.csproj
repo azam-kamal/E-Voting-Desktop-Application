@@ -127,6 +127,12 @@
     <Compile Include="candidateRegs.Designer.cs">
       <DependentUpon>candidateRegs.cs</DependentUpon>
     </Compile>
+    <Compile Include="province_result_items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="province_result_items.Designer.cs">
+      <DependentUpon>province_result_items.cs</DependentUpon>
+    </Compile>
     <Compile Include="registeration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,36 @@
     </Compile>
     <Compile Include="regs_items.Designer.cs">
       <DependentUpon>regs_items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="result_baluchistan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="result_baluchistan.Designer.cs">
+      <DependentUpon>result_baluchistan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="result_items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="result_items.Designer.cs">
+      <DependentUpon>result_items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="result_kpk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="result_kpk.Designer.cs">
+      <DependentUpon>result_kpk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="result_punjab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="result_punjab.Designer.cs">
+      <DependentUpon>result_punjab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="result_sindh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="result_sindh.Designer.cs">
+      <DependentUpon>result_sindh.cs</DependentUpon>
     </Compile>
     <Compile Include="settings.cs">
       <SubType>Form</SubType>
@@ -164,6 +200,12 @@
     </Compile>
     <Compile Include="vote_cast2.Designer.cs">
       <DependentUpon>vote_cast2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vote_result_national.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vote_result_national.Designer.cs">
+      <DependentUpon>vote_result_national.cs</DependentUpon>
     </Compile>
     <Compile Include="voting_items.cs">
       <SubType>Form</SubType>
@@ -201,11 +243,29 @@
     <EmbeddedResource Include="candidateRegs.resx">
       <DependentUpon>candidateRegs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="province_result_items.resx">
+      <DependentUpon>province_result_items.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="registeration.resx">
       <DependentUpon>registeration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="regs_items.resx">
       <DependentUpon>regs_items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="result_baluchistan.resx">
+      <DependentUpon>result_baluchistan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="result_items.resx">
+      <DependentUpon>result_items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="result_kpk.resx">
+      <DependentUpon>result_kpk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="result_punjab.resx">
+      <DependentUpon>result_punjab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="result_sindh.resx">
+      <DependentUpon>result_sindh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="settings.resx">
       <DependentUpon>settings.cs</DependentUpon>
@@ -218,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vote_cast2.resx">
       <DependentUpon>vote_cast2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vote_result_national.resx">
+      <DependentUpon>vote_result_national.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="voting_items.resx">
       <DependentUpon>voting_items.cs</DependentUpon>

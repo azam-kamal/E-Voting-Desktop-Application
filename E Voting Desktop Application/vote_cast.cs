@@ -29,5 +29,20 @@ namespace E_Voting_Desktop_Application
             this.Hide();
             ass.ShowDialog();
         }
+
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            groupBox1.Visible = true;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (maskedTextBox1.Text == "admin")
+            {
+                voting_items ass = new voting_items();
+                this.Hide();
+                ass.ShowDialog();
+            }
+        }
     }
 }

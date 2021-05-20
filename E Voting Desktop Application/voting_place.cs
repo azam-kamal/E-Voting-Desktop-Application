@@ -156,5 +156,12 @@ namespace E_Voting_Desktop_Application
             this.Hide();
             vt.ShowDialog();
         }
+
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            voting_items ass = new voting_items();
+            this.Hide();
+            ass.ShowDialog();
+        }
     }
 }

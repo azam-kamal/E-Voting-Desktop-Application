@@ -19,9 +19,29 @@ namespace E_Voting_Desktop_Application
 
         private void bunifuTileButton3_Click(object sender, EventArgs e)
         {
-            voting_place ass = new voting_place();
+            groupBox1.Visible = true;
+            
+        }
+
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            dashboard ass = new dashboard();
             this.Hide();
             ass.ShowDialog();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (maskedTextBox1.Text == "admin")
+            {
+                voting_place ass = new voting_place();
+                this.Hide();
+                ass.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("password was incorrect");
+            }
         }
     }
 }

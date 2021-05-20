@@ -194,3 +194,10 @@ C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Applicati
 C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.vote_cast2.resources
 C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.voting_items.resources
 C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.voting_place.resources
+C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.province_result_items.resources
+C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.result_baluchistan.resources
+C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.result_items.resources
+C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.result_kpk.resources
+C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.result_punjab.resources
+C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.result_sindh.resources
+C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.vote_result_national.resources
