@@ -11,8 +11,10 @@ using System.Windows.Forms;
 
 namespace E_Voting_Desktop_Application
 {
+    
     public partial class voting_place : Form
     {
+        public static String pollingStation = "";
         SqlConnection MyConnection = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
         SqlCommand command;
 
@@ -148,9 +150,11 @@ namespace E_Voting_Desktop_Application
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            vote_cast ass = new vote_cast(pollingStationNumberDropdown3.selectedValue.ToString());
+            vote_cast vt = new vote_cast();
+            pollingStation = pollingStationNumberDropdown3.selectedValue.ToString();
+            //pollingStationNumberDropdown3.selectedValue.ToString()
             this.Hide();
-            ass.ShowDialog();
+            vt.ShowDialog();
         }
     }
 }

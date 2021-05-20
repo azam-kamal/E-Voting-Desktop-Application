@@ -188,10 +188,10 @@ namespace E_Voting_Desktop_Application
         {
             //Values load up
 
-            label7.Text = v2;
-            label12.Text = v3;
-            label8.Text = text1;
-            label11.Text = text2;
+            label7.Text = vote_cast.nAParty;
+            label12.Text = vote_cast2.pAParty;
+            label8.Text = vote_cast.nACandidate;
+            label11.Text = vote_cast2.pACandidate;
             //////////////////////////////////////////
 
             SqlConnection MyConnection = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");

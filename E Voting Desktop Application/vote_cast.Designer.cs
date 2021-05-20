@@ -170,7 +170,7 @@
             this.label1.Size = new System.Drawing.Size(217, 43);
             this.label1.TabIndex = 0;
             this.label1.Text = "National Assembly";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+//            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // back_btn
             // 

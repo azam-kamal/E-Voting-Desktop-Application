@@ -12,24 +12,20 @@ namespace E_Voting_Desktop_Application
 {
     public partial class vote_cast2 : Form
     {
-        private string v1;
-        private string v2;
+        public static string pACandidate="";
+        public static string pAParty = "";
 
         public vote_cast2()
         {
             InitializeComponent();
         }
 
-        public vote_cast2(string v1, string v2, string text)
-        {
-            this.v1 = v1;
-            this.v2 = v2;
-            Text = text;
-        }
-
+       
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            voter_cast3 ass = new voter_cast3(v1,v2,Text,bunifuDropdown1.selectedValue.ToString(),label6.Text);
+            pAParty = bunifuDropdown1.selectedValue.ToString();
+            pACandidate = label6.Text;
+            voter_cast3 ass = new voter_cast3();
             this.Hide();
             ass.ShowDialog();
         }
