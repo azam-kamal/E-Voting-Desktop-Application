@@ -21,6 +21,7 @@ namespace E_Voting_Desktop_Application
         /// </summary>
         String id;
         int btnClick = 0;
+        bool fname, ad, nic,mon;
         public registeration()
         {
             InitializeComponent();
@@ -42,7 +43,7 @@ namespace E_Voting_Desktop_Application
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            if (voterNameTextbox1.Text == "" && voterNicTextbox2.Text == "" && provinceDropdown1.selectedValue.ToString() == "" && cityDropdown2.selectedValue.ToString() == "" && addressTextbox3.Text == "" && pollingStationNumberDropdown3.selectedValue.ToString() == ""&&voterMobileNumberTextbox4.Text=="")
+            if (voterNameTextbox1.Text == "" && voterNicTextbox2.Text == "" && addressTextbox3.Text == "" &&voterMobileNumberTextbox4.Text=="")
             {
                 MessageBox.Show("All Field Are Empty");
             }
@@ -54,26 +55,20 @@ namespace E_Voting_Desktop_Application
             {
                 MessageBox.Show("VoterNic is empty");
             }
-            else if (provinceDropdown1.selectedValue.ToString() == "")
-            {
-                MessageBox.Show("Province is not selected");
-            }
-            else if (cityDropdown2.selectedValue.ToString() == "")
-            {
-                MessageBox.Show("city is not selected");
-            }
             else if (addressTextbox3.Text == "")
             {
                 MessageBox.Show("Address is not selected");
             }
-            else if (pollingStationNumberDropdown3.selectedValue.ToString()=="")
-            {
-                MessageBox.Show("PollingStationNumber is not selected");
-            }
+          
             else if (voterMobileNumberTextbox4.Text == "")
             {
                 MessageBox.Show("VoterMobileNumber is empty");
             }
+            else if (fname == true) { }
+            else if (nic == true) { }
+            else if (mon == true) { }
+            else if (ad == true) { }
+
             else
             {
                 ConnectionVoter cv = new ConnectionVoter();
@@ -209,9 +204,80 @@ namespace E_Voting_Desktop_Application
             }
             }
 
+        private void voterNicTextbox2_OnValueChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(voterNicTextbox2.Text, "^[0-9+]{5}-[0-9+]{7}-[0-9]{1}$"))
+            {
+                cnicPictureBox1.Image = Properties.Resources._checked;
+                nic = false;
+            }
+            else if (string.IsNullOrEmpty(voterNicTextbox2.Text))
+            {
+                cnicPictureBox1.Image = Properties.Resources.Warning;
+                nic = false;
+            }
+            else
+            {
+                cnicPictureBox1.Image = Properties.Resources.cross;
+                nic = true;
+            }
+        }
+
+        private void addressTextbox3_OnValueChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(addressTextbox3.Text, "^[a-zA-Z]"))
+            {
+                addresspictureBox1.Image = Properties.Resources._checked;
+                ad = false;
+            }
+            else if (string.IsNullOrEmpty(addressTextbox3.Text))
+            {
+                addresspictureBox1.Image = Properties.Resources.Warning;
+                ad = false;
+            }
+            else
+            {
+                addresspictureBox1.Image = Properties.Resources.cross;
+                ad = true;
+            }
+        }
+
+        private void voterMobileNumberTextbox4_OnValueChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(voterMobileNumberTextbox4.Text, "^[0-9+]{4}-[0-9]{7}$"))
+            {
+                mobileNumberpictureBox1.Image = Properties.Resources._checked;
+                mon = false;
+            }
+            else if (string.IsNullOrEmpty(voterMobileNumberTextbox4.Text))
+            {
+                mobileNumberpictureBox1.Image = Properties.Resources.Warning;
+                mon = false;
+            }
+            else
+            {
+                mobileNumberpictureBox1.Image = Properties.Resources.cross;
+                mon = true;
+            }
+        }
+
         private void voterNameTextbox1_OnValueChanged(object sender, EventArgs e)
         {
-
+            if (System.Text.RegularExpressions.Regex.IsMatch(voterNameTextbox1.Text, "^[a-zA-Z]"))
+            {
+                namePictureBox3.Image = Properties.Resources._checked;
+                fname = false;
+            }
+            else if (string.IsNullOrEmpty(voterNameTextbox1.Text))
+            {
+                namePictureBox3.Image = Properties.Resources.Warning;
+                fname = false;
+            }
+            else
+            {
+                namePictureBox3.Image = Properties.Resources.cross;
+                fname = true;
+            }
         }
     }
         

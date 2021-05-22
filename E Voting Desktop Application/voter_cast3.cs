@@ -125,8 +125,10 @@ namespace E_Voting_Desktop_Application
                                         Thread.Sleep(2000);
                                         zkfp.Int2ByteArray(0, paramValue2);
                                         zkfp2.SetParameters(mDevHandle, 102, paramValue2, 4);
-
-                                        MessageBox.Show("YOUR VOTE HAS BEING CASTED!\n");
+                                        ConnectionCandidates cc = new ConnectionCandidates();
+                                        cc.RegisterVoteOfNationalAssemblyCandidate(vote_cast.nACandidate, voting_place.pollingStation, vote_cast.nAParty);
+                                        cc.RegisterVoteOfProvincialAssemblyCandidate(vote_cast2.pACandidate, voting_place.pollingStation, vote_cast2.pAParty,voting_place.province);
+                                    MessageBox.Show("YOUR VOTE HAS BEING CASTED!\n");
 
                                     //DATABSE ME ADD KARNA HE IDHAR SE
                                     bIsTimeToDie = true;
@@ -177,6 +179,7 @@ namespace E_Voting_Desktop_Application
 
         private void bunifuThinButton22_Click_1(object sender, EventArgs e)
         {
+           
             if (!bIdentify)
             {
                 bIdentify = true;

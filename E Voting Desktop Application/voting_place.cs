@@ -14,14 +14,16 @@ namespace E_Voting_Desktop_Application
     
     public partial class voting_place : Form
     {
+        public static String id;
         public static String pollingStation = "";
+        public static String province;
         SqlConnection MyConnection = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
         SqlCommand command;
 
         /// <summary>
         /// //////////////////////////////////
         /// </summary>
-        String id;
+       
         int btnClick = 0;
         public voting_place()
         {
@@ -32,6 +34,7 @@ namespace E_Voting_Desktop_Application
         {
             if (provinceDropdown1.selectedValue == "Sindh")
             {
+                province = "Sindh";
                 cityDropdown2.AddItem("Karachi");
                 cityDropdown2.AddItem("Hyderabad");
                 cityDropdown2.AddItem("Larkana");
@@ -39,6 +42,7 @@ namespace E_Voting_Desktop_Application
             }
             else if (provinceDropdown1.selectedValue == "Baluchistan")
             {
+                province = "Baluchistan";
                 cityDropdown2.AddItem("Quetta");
                 cityDropdown2.AddItem("Ziarat");
                 cityDropdown2.AddItem("Chaman");
@@ -46,6 +50,7 @@ namespace E_Voting_Desktop_Application
             }
             else if (provinceDropdown1.selectedValue == "Punjab")
             {
+                province = "Punjab";
                 cityDropdown2.AddItem("Lahore");
                 cityDropdown2.AddItem("Multan");
                 cityDropdown2.AddItem("Faisalabad");
@@ -53,6 +58,7 @@ namespace E_Voting_Desktop_Application
             }
             else if (provinceDropdown1.selectedValue == "Khyber Pakhtunkhwa")
             {
+                province = "Kpk";
                 cityDropdown2.AddItem("Peshawar");
                 cityDropdown2.AddItem("Mardan");
                 cityDropdown2.AddItem("Swat");

@@ -43,5 +43,73 @@ namespace E_Voting_Desktop_Application
                 MyConnection.Close();
             }
         }
-    }
+
+        public void RegisterVoteOfNationalAssemblyCandidate(String candidateName, String pollingStationNumber, String party)
+        {
+            try
+            {
+                command = new SqlCommand("[NationalAssemlyCandidateVoteRegistered]", MyConnection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@candidateName", candidateName);
+                command.Parameters.AddWithValue("@pollingStationNumber", pollingStationNumber);
+                command.Parameters.AddWithValue("@party", party);
+                MyConnection.Open();
+                command.ExecuteNonQuery();
+                command.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
+            finally
+            {
+                MyConnection.Close();
+            }
+        }
+        public void RegisterVoteOfProvincialAssemblyCandidate(String candidateName, String pollingStationNumber, String party,String province)
+        {
+            String query = "";
+            if (province == "Sindh")
+            {
+                query="[sindhVotes]";
+            }
+            else if (province == "Punjab")
+            {
+                query = "[punjabVotes]";
+            }
+            else if (province == "Kpk")
+            {
+                query = "[KpkVotes]";
+            }
+            else if (province == "Baluchistan")
+            {
+                query = "[BaluchistanVotes]";
+            }
+            try
+            {
+                command = new SqlCommand(query, MyConnection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@candidateName", candidateName);
+                command.Parameters.AddWithValue("@pollingStationNumber", pollingStationNumber);
+                command.Parameters.AddWithValue("@party", party);
+                MyConnection.Open();
+                command.ExecuteNonQuery();
+                command.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
+            finally
+            {
+                MyConnection.Close();
+            }
+        }
+        //Ahmed Code End
+
+    
+
+}
 }

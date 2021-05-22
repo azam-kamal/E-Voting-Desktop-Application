@@ -50,8 +50,14 @@
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.cityDropDown2 = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.namePictureBox3 = new System.Windows.Forms.PictureBox();
+            this.voterNameTextbox1 = new System.Windows.Forms.PictureBox();
+            this.addresspictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.namePictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.voterNameTextbox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addresspictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuFormFadeTransition1
@@ -112,7 +118,7 @@
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(589, 68);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(669, 68);
             this.bunifuGradientPanel1.TabIndex = 33;
             // 
             // label14
@@ -194,6 +200,7 @@
             this.addressTextBox3.Size = new System.Drawing.Size(379, 33);
             this.addressTextBox3.TabIndex = 49;
             this.addressTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.addressTextBox3.OnValueChanged += new System.EventHandler(this.addressTextBox3_OnValueChanged);
             // 
             // longitudeTextBox4
             // 
@@ -361,12 +368,43 @@
             this.bunifuCustomLabel6.TabIndex = 68;
             this.bunifuCustomLabel6.Text = "City";
             // 
+            // namePictureBox3
+            // 
+            this.namePictureBox3.ErrorImage = global::E_Voting_Desktop_Application.Properties.Resources.Warning;
+            this.namePictureBox3.Location = new System.Drawing.Point(585, 104);
+            this.namePictureBox3.Name = "namePictureBox3";
+            this.namePictureBox3.Size = new System.Drawing.Size(35, 30);
+            this.namePictureBox3.TabIndex = 119;
+            this.namePictureBox3.TabStop = false;
+            // 
+            // voterNameTextbox1
+            // 
+            this.voterNameTextbox1.ErrorImage = global::E_Voting_Desktop_Application.Properties.Resources.Warning;
+            this.voterNameTextbox1.Location = new System.Drawing.Point(585, 161);
+            this.voterNameTextbox1.Name = "voterNameTextbox1";
+            this.voterNameTextbox1.Size = new System.Drawing.Size(35, 30);
+            this.voterNameTextbox1.TabIndex = 120;
+            this.voterNameTextbox1.TabStop = false;
+            this.voterNameTextbox1.Click += new System.EventHandler(this.voterNameTextbox1_Click);
+            // 
+            // addresspictureBox1
+            // 
+            this.addresspictureBox1.ErrorImage = global::E_Voting_Desktop_Application.Properties.Resources.Warning;
+            this.addresspictureBox1.Location = new System.Drawing.Point(585, 287);
+            this.addresspictureBox1.Name = "addresspictureBox1";
+            this.addresspictureBox1.Size = new System.Drawing.Size(35, 30);
+            this.addresspictureBox1.TabIndex = 122;
+            this.addresspictureBox1.TabStop = false;
+            // 
             // pollingStation_regs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(37)))));
-            this.ClientSize = new System.Drawing.Size(589, 493);
+            this.ClientSize = new System.Drawing.Size(669, 493);
+            this.Controls.Add(this.addresspictureBox1);
+            this.Controls.Add(this.voterNameTextbox1);
+            this.Controls.Add(this.namePictureBox3);
             this.Controls.Add(this.provinceDropDown1);
             this.Controls.Add(this.bunifuCustomLabel7);
             this.Controls.Add(this.cityDropDown2);
@@ -392,6 +430,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.namePictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.voterNameTextbox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addresspictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -419,5 +460,8 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
         private Bunifu.Framework.UI.BunifuDropdown cityDropDown2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
+        private System.Windows.Forms.PictureBox namePictureBox3;
+        private System.Windows.Forms.PictureBox voterNameTextbox1;
+        private System.Windows.Forms.PictureBox addresspictureBox1;
     }
 }

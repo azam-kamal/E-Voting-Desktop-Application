@@ -54,9 +54,13 @@
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.provinceDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
             this.cityDropDown2 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.namePictureBox3 = new System.Windows.Forms.PictureBox();
+            this.cnicPictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AgeNumericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.namePictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cnicPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuSeparator1
@@ -99,7 +103,7 @@
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(577, 68);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(680, 68);
             this.bunifuGradientPanel1.TabIndex = 2;
             // 
             // label14
@@ -174,6 +178,7 @@
             this.fullNameTextBox1.Size = new System.Drawing.Size(379, 33);
             this.fullNameTextBox1.TabIndex = 60;
             this.fullNameTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.fullNameTextBox1.OnValueChanged += new System.EventHandler(this.fullNameTextBox1_OnValueChanged);
             // 
             // bunifuCustomLabel1
             // 
@@ -206,6 +211,7 @@
             this.CNICTextBox2.Size = new System.Drawing.Size(379, 33);
             this.CNICTextBox2.TabIndex = 62;
             this.CNICTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.CNICTextBox2.OnValueChanged += new System.EventHandler(this.CNICTextBox2_OnValueChanged);
             // 
             // bunifuCustomLabel2
             // 
@@ -388,7 +394,7 @@
             this.bunifuCustomLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel8.ForeColor = System.Drawing.Color.White;
             this.bunifuCustomLabel8.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(346, 251);
+            this.bunifuCustomLabel8.Location = new System.Drawing.Point(370, 251);
             this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
             this.bunifuCustomLabel8.Size = new System.Drawing.Size(42, 26);
             this.bunifuCustomLabel8.TabIndex = 77;
@@ -413,7 +419,7 @@
             this.provinceDropdown1.selectedIndex = -1;
             this.provinceDropdown1.Size = new System.Drawing.Size(146, 35);
             this.provinceDropdown1.TabIndex = 80;
-            this.provinceDropdown1.onItemSelected += new System.EventHandler(this.provinceDropdown1_onItemSelected);
+            this.provinceDropdown1.onItemSelected += new System.EventHandler(this.provinceDropdown1_onItemSelected_1);
             // 
             // cityDropDown2
             // 
@@ -423,7 +429,7 @@
             this.cityDropDown2.DisabledColor = System.Drawing.Color.Transparent;
             this.cityDropDown2.ForeColor = System.Drawing.Color.White;
             this.cityDropDown2.Items = new string[0];
-            this.cityDropDown2.Location = new System.Drawing.Point(419, 251);
+            this.cityDropDown2.Location = new System.Drawing.Point(443, 251);
             this.cityDropDown2.Name = "cityDropDown2";
             this.cityDropDown2.NomalColor = System.Drawing.Color.Transparent;
             this.cityDropDown2.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
@@ -432,12 +438,32 @@
             this.cityDropDown2.TabIndex = 81;
             this.cityDropDown2.onItemSelected += new System.EventHandler(this.cityDropdown2_onItemSelected_1);
             // 
+            // namePictureBox3
+            // 
+            this.namePictureBox3.ErrorImage = global::E_Voting_Desktop_Application.Properties.Resources.Warning;
+            this.namePictureBox3.Location = new System.Drawing.Point(543, 111);
+            this.namePictureBox3.Name = "namePictureBox3";
+            this.namePictureBox3.Size = new System.Drawing.Size(35, 30);
+            this.namePictureBox3.TabIndex = 117;
+            this.namePictureBox3.TabStop = false;
+            // 
+            // cnicPictureBox1
+            // 
+            this.cnicPictureBox1.ErrorImage = global::E_Voting_Desktop_Application.Properties.Resources.Warning;
+            this.cnicPictureBox1.Location = new System.Drawing.Point(543, 160);
+            this.cnicPictureBox1.Name = "cnicPictureBox1";
+            this.cnicPictureBox1.Size = new System.Drawing.Size(35, 30);
+            this.cnicPictureBox1.TabIndex = 118;
+            this.cnicPictureBox1.TabStop = false;
+            // 
             // CandidateRegs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(37)))));
-            this.ClientSize = new System.Drawing.Size(577, 511);
+            this.ClientSize = new System.Drawing.Size(680, 511);
+            this.Controls.Add(this.cnicPictureBox1);
+            this.Controls.Add(this.namePictureBox3);
             this.Controls.Add(this.cityDropDown2);
             this.Controls.Add(this.provinceDropdown1);
             this.Controls.Add(this.bunifuCustomLabel7);
@@ -469,6 +495,8 @@
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AgeNumericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.namePictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cnicPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -501,5 +529,7 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
         private Bunifu.Framework.UI.BunifuDropdown provinceDropdown1;
         private Bunifu.Framework.UI.BunifuDropdown cityDropDown2;
+        private System.Windows.Forms.PictureBox namePictureBox3;
+        private System.Windows.Forms.PictureBox cnicPictureBox1;
     }
 }

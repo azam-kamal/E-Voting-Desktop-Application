@@ -21,7 +21,8 @@ namespace E_Voting_Desktop_Application
         String representation;
         String id;
         int btnClick = 0;
-
+        bool fname;
+        bool nic;
         private void registeration_Load(object sender, EventArgs e)
         {
             pollingStationDropDown3.RemoveItem("NA-245");
@@ -39,21 +40,22 @@ namespace E_Voting_Desktop_Application
             dd.ShowDialog();
         }
 
-    
+
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-           
-            if (fullNameTextBox1.Text == "" && CNICTextBox2.Text == "" && AgeNumericUpDown1.Value.ToString() == "" && provinceDropdown1.selectedValue.ToString() == "" && cityDropDown2.selectedValue.ToString() == "" && partyDropDown3.selectedValue.ToString() == "" && nationalAssemblyCheckBox1.Checked == false &&provincialAssemblyCheckBox2.Checked==false&&pollingStationDropDown3.selectedValue.ToString()=="") {
+
+            if (fullNameTextBox1.Text == "" && CNICTextBox2.Text == "" && AgeNumericUpDown1.Value.ToString() == ""  && nationalAssemblyCheckBox1.Checked == false && provincialAssemblyCheckBox2.Checked == false )
+            {
                 MessageBox.Show("All Field Are Empty");
 
             }
-            else if(fullNameTextBox1.Text == "")
+            else if (fullNameTextBox1.Text == "")
             {
                 MessageBox.Show("Candidate Name is empty");
 
             }
-            else if(CNICTextBox2.Text == "")
+            else if (CNICTextBox2.Text == "")
             {
                 MessageBox.Show("Candidate NIC is empty");
 
@@ -63,35 +65,18 @@ namespace E_Voting_Desktop_Application
                 MessageBox.Show("Candidate Age is not selected");
 
             }
-            else if(provinceDropdown1.selectedValue.ToString() == "")
-            {
-                MessageBox.Show("province is not selected");
-
-            }
-            else if(cityDropDown2.selectedValue.ToString() == "")
-            {
-                MessageBox.Show("city is not selected");
-
-            }
-            else if(partyDropDown3.selectedValue.ToString() == "")
-            {
-                MessageBox.Show("party is not selected");
-
-            }
-            else if(nationalAssemblyCheckBox1.Checked == false&& provincialAssemblyCheckBox2.Checked == false)
+            
+            else if (nationalAssemblyCheckBox1.Checked == false && provincialAssemblyCheckBox2.Checked == false)
             {
                 MessageBox.Show("Representation checkbox not checked");
 
             }
-            else if(pollingStationDropDown3.selectedValue.ToString() == "")
-            {
-                MessageBox.Show("pollibgstationnumber is not selected");
-
-            }
+          else if (fname == true) { }
+          else if (nic == true) { }
 
             else
             {
-                if (nationalAssemblyCheckBox1.Checked == true&&provincialAssemblyCheckBox2.Checked==false)
+                if (nationalAssemblyCheckBox1.Checked == true && provincialAssemblyCheckBox2.Checked == false)
                 {
                     representation = "National Assembly";
                     MessageBox.Show(fullNameTextBox1.Text);
@@ -112,7 +97,7 @@ namespace E_Voting_Desktop_Application
                     ConnectionCandidates cc = new ConnectionCandidates();
                     cc.registerCandidate(fullNameTextBox1.Text, CNICTextBox2.Text, AgeNumericUpDown1.Value.ToString(), provinceDropdown1.selectedValue.ToString(), cityDropDown2.selectedValue.ToString(), id, partyDropDown3.selectedValue.ToString(), representation);
                 }
-                else if (nationalAssemblyCheckBox1.Checked==false&&provincialAssemblyCheckBox2.Checked == true)
+                else if (nationalAssemblyCheckBox1.Checked == false && provincialAssemblyCheckBox2.Checked == true)
                 {
                     representation = "Provincial Assembly";
                     ConnectionCandidates cc = new ConnectionCandidates();
@@ -125,7 +110,7 @@ namespace E_Voting_Desktop_Application
                     ConnectionCandidates cc = new ConnectionCandidates();
                     cc.registerCandidate(fullNameTextBox1.Text, CNICTextBox2.Text, AgeNumericUpDown1.Value.ToString(), provinceDropdown1.selectedValue.ToString(), cityDropDown2.selectedValue.ToString(), id, partyDropDown3.selectedValue.ToString(), representation);
                 }
-              
+
             }
 
 
@@ -133,7 +118,7 @@ namespace E_Voting_Desktop_Application
 
         private void bunifuDropdown2_onItemSelected(object sender, EventArgs e)
         {
-          
+
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
@@ -141,41 +126,14 @@ namespace E_Voting_Desktop_Application
 
         }
 
-       
 
-       
+
+
 
 
         private void provinceDropdown1_onItemSelected(object sender, EventArgs e)
         {
-            if (provinceDropdown1.selectedValue == "Sindh")
-            {
-                cityDropDown2.AddItem("Karachi");
-                cityDropDown2.AddItem("Hyderabad");
-                cityDropDown2.AddItem("Larkana");
-                cityDropDown2.AddItem("Sukkur");
-            }
-            else if (provinceDropdown1.selectedValue == "Baluchistan")
-            {
-                cityDropDown2.AddItem("Quetta");
-                cityDropDown2.AddItem("Ziarat");
-                cityDropDown2.AddItem("Chaman");
-                cityDropDown2.AddItem("Sui");
-            }
-            else if (provinceDropdown1.selectedValue == "Punjab")
-            {
-                cityDropDown2.AddItem("Lahore");
-                cityDropDown2.AddItem("Multan");
-                cityDropDown2.AddItem("Faisalabad");
-                cityDropDown2.AddItem("Bhawalpur");
-            }
-            else if (provinceDropdown1.selectedValue == "Khyber Pakhtunkhwa")
-            {
-                cityDropDown2.AddItem("Peshawar");
-                cityDropDown2.AddItem("Mardan");
-                cityDropDown2.AddItem("Swat");
-                cityDropDown2.AddItem("Abbottabad");
-            }
+            
         }
 
         private void cityDropdown2_onItemSelected_1(object sender, EventArgs e)
@@ -244,7 +202,43 @@ namespace E_Voting_Desktop_Application
                 }
             }
         }
+        private void fullNameTextBox1_OnValueChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(fullNameTextBox1.Text, "^[a-zA-Z]"))
+            {
+                namePictureBox3.Image = Properties.Resources._checked;
+                fname = false;
+            }
+            else if (string.IsNullOrEmpty(fullNameTextBox1.Text))
+            {
+                namePictureBox3.Image = Properties.Resources.Warning;
+                fname = false;
+            }
+            else
+            {
+                namePictureBox3.Image = Properties.Resources.cross;
+                fname = true;
+            }
+        }
 
+        private void CNICTextBox2_OnValueChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(CNICTextBox2.Text, "^[0-9+]{5}-[0-9+]{7}-[0-9]{1}$"))
+            {
+                cnicPictureBox1.Image = Properties.Resources._checked;
+                nic = false;
+            }
+            else if (string.IsNullOrEmpty(CNICTextBox2.Text))
+            {
+                cnicPictureBox1.Image = Properties.Resources.Warning;
+                nic = false;
+            }
+            else
+            {
+                cnicPictureBox1.Image = Properties.Resources.cross;
+                nic = true;
+            }
+        }
         private void pollingStationDropDown3_onItemSelected(object sender, EventArgs e)
         {
             try
@@ -270,6 +264,38 @@ namespace E_Voting_Desktop_Application
             finally
             {
                 MyConnection.Close();
+            }
+        }
+
+        private void provinceDropdown1_onItemSelected_1(object sender, EventArgs e)
+        {
+            if (provinceDropdown1.selectedValue == "Sindh")
+            {
+                cityDropDown2.AddItem("Karachi");
+                cityDropDown2.AddItem("Hyderabad");
+                cityDropDown2.AddItem("Larkana");
+                cityDropDown2.AddItem("Sukkur");
+            }
+            else if (provinceDropdown1.selectedValue == "Baluchistan")
+            {
+                cityDropDown2.AddItem("Quetta");
+                cityDropDown2.AddItem("Ziarat");
+                cityDropDown2.AddItem("Chaman");
+                cityDropDown2.AddItem("Sui");
+            }
+            else if (provinceDropdown1.selectedValue == "Punjab")
+            {
+                cityDropDown2.AddItem("Lahore");
+                cityDropDown2.AddItem("Multan");
+                cityDropDown2.AddItem("Faisalabad");
+                cityDropDown2.AddItem("Bhawalpur");
+            }
+            else if (provinceDropdown1.selectedValue == "Khyber Pakhtunkhwa")
+            {
+                cityDropDown2.AddItem("Peshawar");
+                cityDropDown2.AddItem("Mardan");
+                cityDropDown2.AddItem("Swat");
+                cityDropDown2.AddItem("Abbottabad");
             }
         }
     }

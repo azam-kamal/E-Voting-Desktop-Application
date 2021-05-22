@@ -35,7 +35,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.bunifuDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.partyDropDown = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
@@ -90,25 +90,26 @@
             this.label2.TabIndex = 71;
             this.label2.Text = "Select Party:";
             // 
-            // bunifuDropdown1
+            // partyDropDown
             // 
-            this.bunifuDropdown1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.BorderRadius = 3;
-            this.bunifuDropdown1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.Items = new string[] {
+            this.partyDropDown.BackColor = System.Drawing.Color.Transparent;
+            this.partyDropDown.BorderRadius = 3;
+            this.partyDropDown.DisabledColor = System.Drawing.Color.Gray;
+            this.partyDropDown.ForeColor = System.Drawing.Color.White;
+            this.partyDropDown.Items = new string[] {
         "PTI",
         "PML(N)",
         "PPP",
         "MQM",
         "ANP"};
-            this.bunifuDropdown1.Location = new System.Drawing.Point(306, 334);
-            this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuDropdown1.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuDropdown1.selectedIndex = -1;
-            this.bunifuDropdown1.Size = new System.Drawing.Size(217, 35);
-            this.bunifuDropdown1.TabIndex = 70;
+            this.partyDropDown.Location = new System.Drawing.Point(306, 334);
+            this.partyDropDown.Name = "partyDropDown";
+            this.partyDropDown.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.partyDropDown.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.partyDropDown.selectedIndex = -1;
+            this.partyDropDown.Size = new System.Drawing.Size(217, 35);
+            this.partyDropDown.TabIndex = 70;
+            this.partyDropDown.onItemSelected += new System.EventHandler(this.party_onItemSelected);
             // 
             // bunifuThinButton21
             // 
@@ -206,7 +207,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.bunifuDropdown1);
+            this.Controls.Add(this.partyDropDown);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "vote_cast2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -229,7 +230,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown1;
+        private Bunifu.Framework.UI.BunifuDropdown partyDropDown;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
     }
 }

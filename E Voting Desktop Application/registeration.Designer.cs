@@ -51,8 +51,16 @@
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.provinceDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.namePictureBox3 = new System.Windows.Forms.PictureBox();
+            this.cnicPictureBox1 = new System.Windows.Forms.PictureBox();
+            this.mobileNumberpictureBox1 = new System.Windows.Forms.PictureBox();
+            this.addresspictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.namePictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cnicPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mobileNumberpictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addresspictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuSeparator1
@@ -95,7 +103,7 @@
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(623, 68);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(686, 68);
             this.bunifuGradientPanel1.TabIndex = 2;
             // 
             // label14
@@ -252,6 +260,7 @@
             this.voterNicTextbox2.Size = new System.Drawing.Size(379, 33);
             this.voterNicTextbox2.TabIndex = 59;
             this.voterNicTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.voterNicTextbox2.OnValueChanged += new System.EventHandler(this.voterNicTextbox2_OnValueChanged);
             // 
             // voterMobileNumberTextbox4
             // 
@@ -271,6 +280,7 @@
             this.voterMobileNumberTextbox4.Size = new System.Drawing.Size(379, 33);
             this.voterMobileNumberTextbox4.TabIndex = 60;
             this.voterMobileNumberTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.voterMobileNumberTextbox4.OnValueChanged += new System.EventHandler(this.voterMobileNumberTextbox4_OnValueChanged);
             // 
             // addressTextbox3
             // 
@@ -292,6 +302,7 @@
             this.addressTextbox3.Size = new System.Drawing.Size(379, 28);
             this.addressTextbox3.TabIndex = 62;
             this.addressTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.addressTextbox3.OnValueChanged += new System.EventHandler(this.addressTextbox3_OnValueChanged);
             // 
             // pollingStationNumberDropdown3
             // 
@@ -375,12 +386,52 @@
             this.bunifuCustomLabel7.TabIndex = 66;
             this.bunifuCustomLabel7.Text = "Province";
             // 
+            // namePictureBox3
+            // 
+            this.namePictureBox3.ErrorImage = global::E_Voting_Desktop_Application.Properties.Resources.Warning;
+            this.namePictureBox3.Location = new System.Drawing.Point(591, 98);
+            this.namePictureBox3.Name = "namePictureBox3";
+            this.namePictureBox3.Size = new System.Drawing.Size(35, 30);
+            this.namePictureBox3.TabIndex = 118;
+            this.namePictureBox3.TabStop = false;
+            // 
+            // cnicPictureBox1
+            // 
+            this.cnicPictureBox1.ErrorImage = global::E_Voting_Desktop_Application.Properties.Resources.Warning;
+            this.cnicPictureBox1.Location = new System.Drawing.Point(591, 149);
+            this.cnicPictureBox1.Name = "cnicPictureBox1";
+            this.cnicPictureBox1.Size = new System.Drawing.Size(35, 30);
+            this.cnicPictureBox1.TabIndex = 119;
+            this.cnicPictureBox1.TabStop = false;
+            // 
+            // mobileNumberpictureBox1
+            // 
+            this.mobileNumberpictureBox1.ErrorImage = global::E_Voting_Desktop_Application.Properties.Resources.Warning;
+            this.mobileNumberpictureBox1.Location = new System.Drawing.Point(591, 361);
+            this.mobileNumberpictureBox1.Name = "mobileNumberpictureBox1";
+            this.mobileNumberpictureBox1.Size = new System.Drawing.Size(35, 30);
+            this.mobileNumberpictureBox1.TabIndex = 120;
+            this.mobileNumberpictureBox1.TabStop = false;
+            // 
+            // addresspictureBox1
+            // 
+            this.addresspictureBox1.ErrorImage = global::E_Voting_Desktop_Application.Properties.Resources.Warning;
+            this.addresspictureBox1.Location = new System.Drawing.Point(582, 263);
+            this.addresspictureBox1.Name = "addresspictureBox1";
+            this.addresspictureBox1.Size = new System.Drawing.Size(35, 30);
+            this.addresspictureBox1.TabIndex = 121;
+            this.addresspictureBox1.TabStop = false;
+            // 
             // registeration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(37)))));
-            this.ClientSize = new System.Drawing.Size(623, 487);
+            this.ClientSize = new System.Drawing.Size(686, 487);
+            this.Controls.Add(this.addresspictureBox1);
+            this.Controls.Add(this.mobileNumberpictureBox1);
+            this.Controls.Add(this.cnicPictureBox1);
+            this.Controls.Add(this.namePictureBox3);
             this.Controls.Add(this.provinceDropdown1);
             this.Controls.Add(this.bunifuCustomLabel7);
             this.Controls.Add(this.cityDropdown2);
@@ -406,6 +457,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.namePictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cnicPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mobileNumberpictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addresspictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -434,5 +489,9 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
         private Bunifu.Framework.UI.BunifuDropdown provinceDropdown1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
+        private System.Windows.Forms.PictureBox namePictureBox3;
+        private System.Windows.Forms.PictureBox cnicPictureBox1;
+        private System.Windows.Forms.PictureBox mobileNumberpictureBox1;
+        private System.Windows.Forms.PictureBox addresspictureBox1;
     }
 }
