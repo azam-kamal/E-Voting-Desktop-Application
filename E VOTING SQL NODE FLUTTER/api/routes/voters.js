@@ -128,6 +128,173 @@ router.post('/register', async (req, res, next) => {
 //         })
 //     }
 // })
+router.post('/voteNationalAssembly',async(req,res,next)=>{
+if(req.body.pollingStationNumber!=null && req.body.party!=null && req.body.representation!=null)
+{
+    console.log(req.body.pollingStationNumber+" ||||||||||||||||"+req.body.party+"||||||||||||"+req.body.representation);
+    const result=await getpool()
+    result.input('pollingStationNumber',sql.VarChar(50),req.body.pollingStationNumber).input('party',sql.VarChar(50),req.body.party).input('representation',sql.VarChar(50),req.body.representation).execute('GetNationalAssemblyCandidateForMobileModule',function(error,data){
+        if(error){
+            res.status(500).json({
+                message: "Not Matchjjjjj"
+            })
+        }
+        else{
+            res.status(200).json({
+                candidate_name:data['recordset'][0]['candidate_name']
+            })
+        }
+    })
+}
+else {
+    res.status(400).json({
+        message: 'not found'
+    })
+}
+})
+
+
+router.post('/voteProvincialAssembly',async(req,res,next)=>{
+    if(req.body.pollingStationNumber!=null && req.body.party!=null && req.body.representation!=null)
+    {
+        
+        const result=await getpool()
+        result.input('pollingStationNumber',sql.VarChar(50),req.body.pollingStationNumber).input('party',sql.VarChar(50),req.body.party).input('representation',sql.VarChar(50),req.body.representation).execute('GetProvincialAssemblyCandidateForMobileModule',function(error,data){
+            if(error){
+                res.status(500).json({
+                    message: "Not Match"
+                })
+            }
+            else{
+                res.status(200).json({
+                    candidate_name:data['recordset'][0]['candidate_name']
+                })
+            }
+        })
+    }
+    else {
+        res.status(400).json({
+            message: 'not found'
+        })
+    }
+    })
+
+    router.post('/NationalAssemlyCandidateVoteRegistered',async(req,res,next)=>{
+        if(req.body.candidateName!=null && req.body.party !=null && req.body.pollingStationNumber!=null)
+        {
+            const result=await getpool()
+            result.input('candidateName',sql.VarChar(50),req.body.candidateName).input('party',sql.VarChar(50),req.body.party).input('pollingStationNumber',sql.VarChar(50),req.body.pollingStationNumber).execute('NationalAssemlyCandidateVoteRegistered',function(error,data){
+                if(error){
+                    res.status(500).json({
+                        message: "Not Match"
+                    })
+                }
+                else{
+                    res.status(200).json({
+                        'Message':'Success'
+                    })
+                }
+            })
+        }
+        else {
+            res.status(400).json({
+                message: 'not found'
+            })
+        }
+        })
+
+        router.post('/voteForSindhProvince', async (req, res, next) => {
+            if (req.body.candidateName != null && req.body.party != null && req.body.pollingStationNumber != null) {
+                const result = await getpool()
+                result.input('candidateName', sql.VarChar(50), req.body.candidateName).input('party', sql.VarChar(50), req.body.party).input('pollingStationNumber', sql.VarChar(50), req.body.pollingStationNumber).execute('sindhVotes', function (error, data) {
+                    if (error) {
+                        res.status(500).json({
+                            message: "Not Match"
+                        })
+                    }
+                    else {
+                        res.status(200).json({
+                            'Message': 'Success'
+                        })
+                    }
+                })
+            }
+            else {
+                res.status(400).json({
+                    message: 'not found'
+                })
+            }
+        })
+        
+        router.post('/voteForKPKProvince', async (req, res, next) => {
+            if (req.body.candidateName != null && req.body.party != null && req.body.pollingStationNumber != null) {
+                const result = await getpool()
+                result.input('candidateName', sql.VarChar(50), req.body.candidateName).input('party', sql.VarChar(50), req.body.party).input('pollingStationNumber', sql.VarChar(50), req.body.pollingStationNumber).execute('kpkVotes', function (error, data) {
+                    if (error) {
+                        res.status(500).json({
+                            message: "Not Match"
+                        })
+                    }
+                    else {
+                        res.status(200).json({
+                            'Message': 'Success'
+                        })
+                    }
+                })
+            }
+            else {
+                res.status(400).json({
+                    message: 'not found'
+                })
+            }
+        })
+        
+        router.post('/voteForBaluchistanProvince', async (req, res, next) => {
+            if (req.body.candidateName != null && req.body.party != null && req.body.pollingStationNumber != null) {
+                const result = await getpool()
+                result.input('candidateName', sql.VarChar(50), req.body.candidateName).input('party', sql.VarChar(50), req.body.party).input('pollingStationNumber', sql.VarChar(50), req.body.pollingStationNumber).execute('baluchistanVotes', function (error, data) {
+                    if (error) {
+                        res.status(500).json({
+                            message: "Not Match"
+                        })
+                    }
+                    else {
+                        res.status(200).json({
+                            'Message': 'Success'
+                        })
+                    }
+                })
+            }
+            else {
+                res.status(400).json({
+                    message: 'not found'
+                })
+            }
+        })
+        
+        router.post('/voteForPunjabProvince', async (req, res, next) => {
+            if (req.body.candidateName != null && req.body.party != null && req.body.pollingStationNumber != null) {
+                const result = await getpool()
+                result.input('candidateName', sql.VarChar(50), req.body.candidateName).input('party', sql.VarChar(50), req.body.party).input('pollingStationNumber', sql.VarChar(50), req.body.pollingStationNumber).execute('punjabVotes', function (error, data) {
+                    if (error) {
+                        res.status(500).json({
+                            message: "Not Match"
+                        })
+                    }
+                    else {
+                        res.status(200).json({
+                            'Message': 'Success'
+                        })
+                    }
+                })
+            }
+            else {
+                res.status(400).json({
+                    message: 'not found'
+                })
+            }
+        })
+
 
 router.post('/login', async (req, res, next) => {
     console.log('Al Hamdullilah')
@@ -157,7 +324,8 @@ router.post('/login', async (req, res, next) => {
                         voterProvincialAssemblyVoteCast: voterData['recordset'][0]['voter_provincial_assembly_vote_cast'],
                         longitude: voterData['recordset'][0]['longitude'],
                         latitude: voterData['recordset'][0]['latitude'],
-                    })
+                }
+                )
                 }
                 else {
                     res.status(500).json({

@@ -295,6 +295,7 @@
             this.Name = "vote_result_national";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "vote_result_national";
+            this.Load += new System.EventHandler(this.vote_result_national_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

@@ -246,6 +246,7 @@
             this.Name = "result_baluchistan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "result_baluchistan";
+            this.Load += new System.EventHandler(this.result_baluchistan_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

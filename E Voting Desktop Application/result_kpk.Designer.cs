@@ -246,6 +246,7 @@
             this.Name = "result_kpk";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "result_kpk";
+            this.Load += new System.EventHandler(this.result_kpk_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
