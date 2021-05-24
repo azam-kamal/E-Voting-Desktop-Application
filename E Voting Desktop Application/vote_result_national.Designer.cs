@@ -142,6 +142,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(8, 30);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(273, 142);
@@ -237,7 +238,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(61, 18);
             this.label7.TabIndex = 77;
-            this.label7.Text = "Seats :";
+            this.label7.Text = "Votes :";
             // 
             // label6
             // 

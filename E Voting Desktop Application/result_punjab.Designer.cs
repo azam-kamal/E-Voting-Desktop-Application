@@ -104,7 +104,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(61, 18);
             this.label7.TabIndex = 77;
-            this.label7.Text = "Seats :";
+            this.label7.Text = "Votes :";
             // 
             // label6
             // 
@@ -132,6 +132,7 @@
             this.groupBox1.TabIndex = 91;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "1";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // pictureBox1
             // 
