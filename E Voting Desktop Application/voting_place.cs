@@ -17,7 +17,7 @@ namespace E_Voting_Desktop_Application
         public static String id;
         public static String pollingStation = "";
         public static String province;
-        SqlConnection MyConnection = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
+        SqlConnection MyConnection = new SqlConnection(@"Data Source=User-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
         SqlCommand command;
 
         /// <summary>

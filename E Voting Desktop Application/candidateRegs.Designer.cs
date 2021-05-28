@@ -35,8 +35,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.nationalAssemblyCheckBox1 = new System.Windows.Forms.CheckBox();
-            this.provincialAssemblyCheckBox2 = new System.Windows.Forms.CheckBox();
             this.fullNameTextBox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.CNICTextBox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -56,6 +54,9 @@
             this.cityDropDown2 = new Bunifu.Framework.UI.BunifuDropdown();
             this.namePictureBox3 = new System.Windows.Forms.PictureBox();
             this.cnicPictureBox1 = new System.Windows.Forms.PictureBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.provincialAssemblyRadioButton1 = new System.Windows.Forms.RadioButton();
+            this.nationalAssemblyRadioButton1 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AgeNumericUpDown1)).BeginInit();
@@ -135,30 +136,6 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(0, 13);
             this.label5.TabIndex = 35;
-            // 
-            // nationalAssemblyCheckBox1
-            // 
-            this.nationalAssemblyCheckBox1.AutoSize = true;
-            this.nationalAssemblyCheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nationalAssemblyCheckBox1.ForeColor = System.Drawing.Color.White;
-            this.nationalAssemblyCheckBox1.Location = new System.Drawing.Point(165, 386);
-            this.nationalAssemblyCheckBox1.Name = "nationalAssemblyCheckBox1";
-            this.nationalAssemblyCheckBox1.Size = new System.Drawing.Size(158, 24);
-            this.nationalAssemblyCheckBox1.TabIndex = 40;
-            this.nationalAssemblyCheckBox1.Text = "National Assembly";
-            this.nationalAssemblyCheckBox1.UseVisualStyleBackColor = true;
-            // 
-            // provincialAssemblyCheckBox2
-            // 
-            this.provincialAssemblyCheckBox2.AutoSize = true;
-            this.provincialAssemblyCheckBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.provincialAssemblyCheckBox2.ForeColor = System.Drawing.Color.White;
-            this.provincialAssemblyCheckBox2.Location = new System.Drawing.Point(377, 386);
-            this.provincialAssemblyCheckBox2.Name = "provincialAssemblyCheckBox2";
-            this.provincialAssemblyCheckBox2.Size = new System.Drawing.Size(159, 22);
-            this.provincialAssemblyCheckBox2.TabIndex = 41;
-            this.provincialAssemblyCheckBox2.Text = "Provincial Assembly";
-            this.provincialAssemblyCheckBox2.UseVisualStyleBackColor = true;
             // 
             // fullNameTextBox1
             // 
@@ -260,6 +237,7 @@
             this.partyDropDown3.selectedIndex = -1;
             this.partyDropDown3.Size = new System.Drawing.Size(379, 35);
             this.partyDropDown3.TabIndex = 68;
+            this.partyDropDown3.onItemSelected += new System.EventHandler(this.partyDropDown3_onItemSelected);
             // 
             // bunifuCustomLabel4
             // 
@@ -456,12 +434,50 @@
             this.cnicPictureBox1.TabIndex = 118;
             this.cnicPictureBox1.TabStop = false;
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(-15, -15);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.TabIndex = 119;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // provincialAssemblyRadioButton1
+            // 
+            this.provincialAssemblyRadioButton1.AutoSize = true;
+            this.provincialAssemblyRadioButton1.BackColor = System.Drawing.Color.White;
+            this.provincialAssemblyRadioButton1.Location = new System.Drawing.Point(386, 386);
+            this.provincialAssemblyRadioButton1.Name = "provincialAssemblyRadioButton1";
+            this.provincialAssemblyRadioButton1.Size = new System.Drawing.Size(118, 17);
+            this.provincialAssemblyRadioButton1.TabIndex = 120;
+            this.provincialAssemblyRadioButton1.TabStop = true;
+            this.provincialAssemblyRadioButton1.Text = "Provincial Assembly";
+            this.provincialAssemblyRadioButton1.UseVisualStyleBackColor = false;
+            // 
+            // nationalAssemblyRadioButton1
+            // 
+            this.nationalAssemblyRadioButton1.AutoSize = true;
+            this.nationalAssemblyRadioButton1.BackColor = System.Drawing.Color.White;
+            this.nationalAssemblyRadioButton1.Location = new System.Drawing.Point(181, 386);
+            this.nationalAssemblyRadioButton1.Name = "nationalAssemblyRadioButton1";
+            this.nationalAssemblyRadioButton1.Size = new System.Drawing.Size(111, 17);
+            this.nationalAssemblyRadioButton1.TabIndex = 121;
+            this.nationalAssemblyRadioButton1.TabStop = true;
+            this.nationalAssemblyRadioButton1.Text = "National Assembly";
+            this.nationalAssemblyRadioButton1.UseVisualStyleBackColor = false;
+            // 
             // CandidateRegs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(37)))));
             this.ClientSize = new System.Drawing.Size(680, 511);
+            this.Controls.Add(this.nationalAssemblyRadioButton1);
+            this.Controls.Add(this.provincialAssemblyRadioButton1);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.cnicPictureBox1);
             this.Controls.Add(this.namePictureBox3);
             this.Controls.Add(this.cityDropDown2);
@@ -481,8 +497,6 @@
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.fullNameTextBox1);
             this.Controls.Add(this.bunifuCustomLabel1);
-            this.Controls.Add(this.provincialAssemblyCheckBox2);
-            this.Controls.Add(this.nationalAssemblyCheckBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.bunifuGradientPanel1);
@@ -510,8 +524,6 @@
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private System.Windows.Forms.PictureBox back_btn;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox nationalAssemblyCheckBox1;
-        private System.Windows.Forms.CheckBox provincialAssemblyCheckBox2;
         private Bunifu.Framework.UI.BunifuMaterialTextbox fullNameTextBox1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox CNICTextBox2;
@@ -531,5 +543,8 @@
         private Bunifu.Framework.UI.BunifuDropdown cityDropDown2;
         private System.Windows.Forms.PictureBox namePictureBox3;
         private System.Windows.Forms.PictureBox cnicPictureBox1;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton provincialAssemblyRadioButton1;
+        private System.Windows.Forms.RadioButton nationalAssemblyRadioButton1;
     }
 }

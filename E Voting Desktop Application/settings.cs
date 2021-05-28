@@ -18,7 +18,7 @@ namespace E_Voting_Desktop_Application
             InitializeComponent();
         }
 //Connection
-        SqlConnection con = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=ems;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=User-PC;Initial Catalog=ems;Integrated Security=True");
         SqlCommand cmd;
         SqlDataAdapter adap;
         DataSet ds;

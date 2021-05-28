@@ -12,7 +12,7 @@ namespace E_Voting_Desktop_Application
 {
     public class Connecting
     {
-        SqlConnection MyConnection = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=ems;Integrated Security=True");
+        SqlConnection MyConnection = new SqlConnection(@"Data Source=User-PC;Initial Catalog=ems;Integrated Security=True");
         SqlCommand command;
         public void hireemployee(string cnic, string fn,string ln,int gender,int emptype,int sal, string mobilenum
                                  , string address, string joinyear,int bonus,int adv)

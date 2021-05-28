@@ -107,7 +107,7 @@ namespace E_Voting_Desktop_Application
 
                                     if (label4.Text != "")
                                     {
-                                        SqlConnection MyConnection = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
+                                        SqlConnection MyConnection = new SqlConnection(@"Data Source=User-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
                                         SqlCommand command;
 
                                         int empid = Convert.ToInt32(label4.Text);
@@ -186,7 +186,7 @@ namespace E_Voting_Desktop_Application
                                 int ret = zkfp.ZKFP_ERR_OK;
                                // int fid = 0, score = 0;
 
-                                SqlConnection con = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
+                                SqlConnection con = new SqlConnection(@"Data Source=User-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
                                 SqlDataAdapter adap;
                                 DataSet ds;
                                 ds = new DataSet();
@@ -253,7 +253,7 @@ namespace E_Voting_Desktop_Application
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            SqlConnection MyConnection = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
+            SqlConnection MyConnection = new SqlConnection(@"Data Source=User-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
             SqlCommand cmd;
             cmd = new SqlCommand("[lastvoter]", MyConnection);
             cmd.CommandType = CommandType.StoredProcedure;

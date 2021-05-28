@@ -102,6 +102,7 @@
             this.bunifuTileButton2.Name = "bunifuTileButton2";
             this.bunifuTileButton2.Size = new System.Drawing.Size(138, 129);
             this.bunifuTileButton2.TabIndex = 58;
+            this.bunifuTileButton2.Click += new System.EventHandler(this.bunifuTileButton2_Click);
             // 
             // bunifuTileButton1
             // 
@@ -121,6 +122,7 @@
             this.bunifuTileButton1.Name = "bunifuTileButton1";
             this.bunifuTileButton1.Size = new System.Drawing.Size(141, 129);
             this.bunifuTileButton1.TabIndex = 57;
+            this.bunifuTileButton1.Click += new System.EventHandler(this.bunifuTileButton1_Click);
             // 
             // bunifuGradientPanel1
             // 

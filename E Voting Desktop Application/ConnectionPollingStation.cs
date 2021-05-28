@@ -11,7 +11,7 @@ namespace E_Voting_Desktop_Application
 {
     public class ConnectionPollingStation
     {
-        SqlConnection MyConnection = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
+        SqlConnection MyConnection = new SqlConnection(@"Data Source=User-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
         SqlCommand command;
 
         public void registerPollingStation(String stationNumber,String name,String province,String city,String address,String longitude,String latitude)

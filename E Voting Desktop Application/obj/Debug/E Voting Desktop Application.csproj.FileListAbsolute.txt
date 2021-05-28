@@ -201,3 +201,68 @@ C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Applicati
 C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.result_punjab.resources
 C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.result_sindh.resources
 C:\FYP\Desktop\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.vote_result_national.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\E Voting Desktop Application.exe.config
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\E Voting Desktop Application.exe
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\E Voting Desktop Application.pdb
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.Data.Common.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.Diagnostics.StackTrace.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.Diagnostics.Tracing.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.Globalization.Extensions.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.IO.Compression.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.Net.Http.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.Net.Sockets.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.Security.SecureString.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.Threading.Overlapped.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.Xml.XPath.XDocument.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\Firebase.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\FireSharp.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\libzkfpcsharp.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\LiteDB.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\Newtonsoft.Json.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.Net.Http.Extensions.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.Net.Http.Primitives.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.Reactive.dll
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\Firebase.xml
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\LiteDB.xml
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\Newtonsoft.Json.xml
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.Net.Http.Extensions.xml
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.Net.Http.Primitives.xml
+C:\Fyp\Desktop And Server\E Voting Desktop Application\bin\Debug\System.Reactive.xml
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E Voting Desktop Application.csproj.App.config
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E Voting Desktop Application.csprojAssemblyReference.cache
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E Voting Desktop Application.exe.config
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.dashboard.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.enroll.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.login.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.pollingStation_regs.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.Properties.Resources.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.CandidateRegs.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.province_result_items.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.registeration.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.regs_items.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.result_baluchistan.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.result_items.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.result_kpk.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.result_punjab.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.result_sindh.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.settings.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.voter_cast3.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.vote_cast.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.vote_cast2.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.vote_result_national.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.voting_items.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E_Voting_Desktop_Application.voting_place.resources
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E Voting Desktop Application.csproj.GenerateResource.cache
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E Voting Desktop Application.csproj.CoreCompileInputs.cache
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E Voting Desktop Application.csproj.CopyComplete
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E Voting Desktop Application.exe
+C:\Fyp\Desktop And Server\E Voting Desktop Application\obj\Debug\E Voting Desktop Application.pdb

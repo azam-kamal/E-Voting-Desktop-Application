@@ -31,8 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dashboard));
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            this.label11 = new System.Windows.Forms.Label();
+            this.sindhVotes = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
@@ -43,22 +44,21 @@
             this.bunifuTileButton3 = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.bunifuCards2 = new Bunifu.Framework.UI.BunifuCards();
-            this.label3 = new System.Windows.Forms.Label();
+            this.punjabVotes = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuCards3 = new Bunifu.Framework.UI.BunifuCards();
-            this.label5 = new System.Windows.Forms.Label();
+            this.baluchistanVotes = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.bunifuCards4 = new Bunifu.Framework.UI.BunifuCards();
-            this.label7 = new System.Windows.Forms.Label();
+            this.kpkVotes = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.bunifuCards1.SuspendLayout();
@@ -79,7 +79,7 @@
             this.bunifuCards1.BorderRadius = 5;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bunifuCards1.Controls.Add(this.label11);
+            this.bunifuCards1.Controls.Add(this.sindhVotes);
             this.bunifuCards1.Controls.Add(this.label8);
             this.bunifuCards1.Controls.Add(this.pictureBox8);
             this.bunifuCards1.LeftSahddow = false;
@@ -93,19 +93,19 @@
             this.bunifuCards1.MouseLeave += new System.EventHandler(this.bunifuCards1_MouseLeave_1);
             this.bunifuCards1.MouseHover += new System.EventHandler(this.bunifuCards1_MouseHover_1);
             // 
-            // label11
+            // sindhVotes
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(83, 29);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 24);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "1200";
-            this.label11.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox8_MouseClick);
-            this.label11.MouseLeave += new System.EventHandler(this.bunifuCards1_MouseLeave_1);
-            this.label11.MouseHover += new System.EventHandler(this.bunifuCards1_MouseHover_1);
+            this.sindhVotes.AutoSize = true;
+            this.sindhVotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sindhVotes.ForeColor = System.Drawing.Color.Black;
+            this.sindhVotes.Location = new System.Drawing.Point(83, 29);
+            this.sindhVotes.Name = "sindhVotes";
+            this.sindhVotes.Size = new System.Drawing.Size(54, 24);
+            this.sindhVotes.TabIndex = 16;
+            this.sindhVotes.Text = "1200";
+            this.sindhVotes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox8_MouseClick);
+            this.sindhVotes.MouseLeave += new System.EventHandler(this.bunifuCards1_MouseLeave_1);
+            this.sindhVotes.MouseHover += new System.EventHandler(this.bunifuCards1_MouseHover_1);
             // 
             // label8
             // 
@@ -120,6 +120,19 @@
             this.label8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox8_MouseClick);
             this.label8.MouseLeave += new System.EventHandler(this.bunifuCards1_MouseLeave_1);
             this.label8.MouseHover += new System.EventHandler(this.bunifuCards1_MouseHover_1);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(3, 7);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(49, 50);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 16;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox8_MouseClick);
+            this.pictureBox8.MouseLeave += new System.EventHandler(this.bunifuCards1_MouseLeave_1);
+            this.pictureBox8.MouseHover += new System.EventHandler(this.bunifuCards1_MouseHover_1);
             // 
             // bunifuSeparator1
             // 
@@ -265,19 +278,6 @@
             this.bunifuTileButton1.TabIndex = 39;
             this.bunifuTileButton1.Click += new System.EventHandler(this.bunifuTileButton1_Click);
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(3, 7);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(49, 50);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 16;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox8_MouseClick);
-            this.pictureBox8.MouseLeave += new System.EventHandler(this.bunifuCards1_MouseLeave_1);
-            this.pictureBox8.MouseHover += new System.EventHandler(this.bunifuCards1_MouseHover_1);
-            // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
@@ -297,6 +297,18 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(823, 68);
             this.bunifuGradientPanel1.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(80, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(196, 43);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "E-Voting System";
             // 
             // label14
             // 
@@ -330,25 +342,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Dashboard";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(80, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(196, 43);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "E-Voting System";
-            // 
             // bunifuCards2
             // 
             this.bunifuCards2.BackColor = System.Drawing.Color.AliceBlue;
             this.bunifuCards2.BorderRadius = 5;
             this.bunifuCards2.BottomSahddow = true;
             this.bunifuCards2.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bunifuCards2.Controls.Add(this.label3);
+            this.bunifuCards2.Controls.Add(this.punjabVotes);
             this.bunifuCards2.Controls.Add(this.label4);
             this.bunifuCards2.Controls.Add(this.pictureBox2);
             this.bunifuCards2.LeftSahddow = false;
@@ -359,16 +359,17 @@
             this.bunifuCards2.Size = new System.Drawing.Size(158, 60);
             this.bunifuCards2.TabIndex = 44;
             // 
-            // label3
+            // punjabVotes
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(83, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 24);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "1200";
+            this.punjabVotes.AutoSize = true;
+            this.punjabVotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.punjabVotes.ForeColor = System.Drawing.Color.Black;
+            this.punjabVotes.Location = new System.Drawing.Point(83, 29);
+            this.punjabVotes.Name = "punjabVotes";
+            this.punjabVotes.Size = new System.Drawing.Size(54, 24);
+            this.punjabVotes.TabIndex = 16;
+            this.punjabVotes.Text = "1200";
+            this.punjabVotes.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -397,7 +398,7 @@
             this.bunifuCards3.BorderRadius = 5;
             this.bunifuCards3.BottomSahddow = true;
             this.bunifuCards3.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bunifuCards3.Controls.Add(this.label5);
+            this.bunifuCards3.Controls.Add(this.baluchistanVotes);
             this.bunifuCards3.Controls.Add(this.label6);
             this.bunifuCards3.Controls.Add(this.pictureBox3);
             this.bunifuCards3.LeftSahddow = false;
@@ -408,16 +409,16 @@
             this.bunifuCards3.Size = new System.Drawing.Size(158, 60);
             this.bunifuCards3.TabIndex = 17;
             // 
-            // label5
+            // baluchistanVotes
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(83, 29);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 24);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "1200";
+            this.baluchistanVotes.AutoSize = true;
+            this.baluchistanVotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.baluchistanVotes.ForeColor = System.Drawing.Color.Black;
+            this.baluchistanVotes.Location = new System.Drawing.Point(83, 29);
+            this.baluchistanVotes.Name = "baluchistanVotes";
+            this.baluchistanVotes.Size = new System.Drawing.Size(54, 24);
+            this.baluchistanVotes.TabIndex = 16;
+            this.baluchistanVotes.Text = "1200";
             // 
             // label6
             // 
@@ -446,7 +447,7 @@
             this.bunifuCards4.BorderRadius = 5;
             this.bunifuCards4.BottomSahddow = true;
             this.bunifuCards4.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bunifuCards4.Controls.Add(this.label7);
+            this.bunifuCards4.Controls.Add(this.kpkVotes);
             this.bunifuCards4.Controls.Add(this.label9);
             this.bunifuCards4.Controls.Add(this.pictureBox4);
             this.bunifuCards4.LeftSahddow = false;
@@ -457,16 +458,16 @@
             this.bunifuCards4.Size = new System.Drawing.Size(158, 60);
             this.bunifuCards4.TabIndex = 17;
             // 
-            // label7
+            // kpkVotes
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(83, 29);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 24);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "1200";
+            this.kpkVotes.AutoSize = true;
+            this.kpkVotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kpkVotes.ForeColor = System.Drawing.Color.Black;
+            this.kpkVotes.Location = new System.Drawing.Point(83, 29);
+            this.kpkVotes.Name = "kpkVotes";
+            this.kpkVotes.Size = new System.Drawing.Size(54, 24);
+            this.kpkVotes.TabIndex = 16;
+            this.kpkVotes.Text = "1200";
             // 
             // label9
             // 
@@ -540,7 +541,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuCards bunifuCards1;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label sindhVotes;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox8;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
@@ -556,15 +557,15 @@
         private Bunifu.Framework.UI.BunifuFormFadeTransition bunifuFormFadeTransition1;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuCards bunifuCards2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label punjabVotes;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private Bunifu.Framework.UI.BunifuCards bunifuCards3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label baluchistanVotes;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox3;
         private Bunifu.Framework.UI.BunifuCards bunifuCards4;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label kpkVotes;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox4;
     }

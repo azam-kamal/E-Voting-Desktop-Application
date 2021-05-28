@@ -128,6 +128,34 @@ router.post('/register', async (req, res, next) => {
 //         })
 //     }
 // })
+
+router.post('/UpdateVoterVote',async(req,res,next)=>{
+    if(req.body.voterid!=null)
+    {
+        // console.log(req.body.pollingStationNumber+" ||||||||||||||||"+req.body.party+"||||||||||||"+req.body.representation);
+        const result=await getpool()
+        result.input('voterid',sql.VarChar(50),req.body.voterid).execute('UpdateVoterVotes',function(error,data){
+            if(error){
+                res.status(500).json({
+                    message: "Not Match"
+                })
+            }
+            else{
+                res.status(200).json({
+                    'Message':'Success'
+                })
+            }
+        })
+    }
+    else {
+        res.status(400).json({
+            message: 'not found'
+        })
+    }
+    })
+    
+    
+
 router.post('/voteNationalAssembly',async(req,res,next)=>{
 if(req.body.pollingStationNumber!=null && req.body.party!=null && req.body.representation!=null)
 {

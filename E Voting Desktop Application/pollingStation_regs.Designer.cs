@@ -354,6 +354,7 @@
             this.cityDropDown2.selectedIndex = -1;
             this.cityDropDown2.Size = new System.Drawing.Size(146, 35);
             this.cityDropDown2.TabIndex = 69;
+            this.cityDropDown2.onItemSelected += new System.EventHandler(this.cityDropDown2_onItemSelected);
             // 
             // bunifuCustomLabel6
             // 

@@ -11,6 +11,7 @@ using System.Runtime.InteropServices;
 using System.Drawing.Imaging;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using System.Data.SqlClient;
 using System.Threading;
 using E_Voting_Desktop_Application;
@@ -18,6 +19,7 @@ using System.IO;
 
 namespace E_Voting_Desktop_Application
 {
+  
     public partial class dashboard : Form {
 
         //Device Init Components
@@ -28,11 +30,15 @@ namespace E_Voting_Desktop_Application
             timer1.Interval = 1000;
 
         }
-
+        SqlConnection MyConnection = new SqlConnection(@"Data Source=User-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
+        SqlCommand command;
 
         private void dashboard_Load(object sender, EventArgs e)
         {
-           
+            getSindhTotalVotes();
+            getPunjabTotalVotes();
+            getBaluchistanTotalVotes();
+            getKpkTotalVotes();
             //Front Tabs (Count of Employees)
       
 
@@ -222,5 +228,95 @@ namespace E_Voting_Desktop_Application
             this.Hide();
             ass.ShowDialog();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+        public void getSindhTotalVotes()
+        {
+            String getSindhVotes = "";
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter();
+                da.SelectCommand = new SqlCommand("[CountSindhVotes]", MyConnection);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    getSindhVotes = dt.Rows[i]["sindhVotes"].ToString();
+                }
+                sindhVotes.Text = getSindhVotes.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+        public void getPunjabTotalVotes()
+        {
+            String getPunjabVotes = "";
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter();
+                da.SelectCommand = new SqlCommand("[CountPunjabVotes]", MyConnection);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    getPunjabVotes = dt.Rows[i]["punjabVotes"].ToString();
+                }
+               punjabVotes.Text = getPunjabVotes.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+        public void getBaluchistanTotalVotes()
+        {
+            String getBaluchistanVotes = "";
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter();
+                da.SelectCommand = new SqlCommand("[CountBaluchistanVotes]", MyConnection);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    getBaluchistanVotes = dt.Rows[i]["baluchistanVotes"].ToString();
+                }
+                baluchistanVotes.Text = getBaluchistanVotes.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+        public void getKpkTotalVotes()
+        {
+            String getkpkVotes = "";
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter();
+                da.SelectCommand = new SqlCommand("[CountkpkVotes]", MyConnection);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    getkpkVotes = dt.Rows[i]["kpkVotes"].ToString();
+                }
+                kpkVotes.Text = getkpkVotes.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
     }
 }

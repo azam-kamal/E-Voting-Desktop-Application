@@ -13,7 +13,7 @@ namespace E_Voting_Desktop_Application
     public partial class registeration : Form
     {
 
-        SqlConnection MyConnection = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
+        SqlConnection MyConnection = new SqlConnection(@"Data Source=User-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
         SqlCommand command;
 
         /// <summary>
@@ -22,6 +22,8 @@ namespace E_Voting_Desktop_Application
         String id;
         int btnClick = 0;
         bool fname, ad, nic,mon;
+        String provincee = "", cityy = "", partyy = "", pollingg = "";
+
         public registeration()
         {
             InitializeComponent();
@@ -55,6 +57,17 @@ namespace E_Voting_Desktop_Application
             {
                 MessageBox.Show("VoterNic is empty");
             }
+            else if (provincee == "")
+            {
+                MessageBox.Show("Province is not selected");
+
+            }
+            else if (cityy == "")
+            {
+                MessageBox.Show("City is not selected");
+
+            }
+
             else if (addressTextbox3.Text == "")
             {
                 MessageBox.Show("Address is not selected");
@@ -68,14 +81,69 @@ namespace E_Voting_Desktop_Application
             else if (nic == true) { }
             else if (mon == true) { }
             else if (ad == true) { }
+            else if (pollingg == "")
+            {
+                MessageBox.Show("Polling Station is not selected");
 
+            }
             else
             {
-                ConnectionVoter cv = new ConnectionVoter();
-                cv.registerVoter(voterNameTextbox1.Text,voterNicTextbox2.Text,voterMobileNumberTextbox4.Text,provinceDropdown1.selectedValue.ToString(),cityDropdown2.selectedValue.ToString(),addressTextbox3.Text,id,0,0);
-                enroll en = new enroll();
-                this.Hide();
-                en.ShowDialog();
+                String checkNic = "", checkMob = "";
+
+                try
+                {
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.SelectCommand = new SqlCommand("[checkVoterCNIC]", MyConnection);
+                    da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                    da.SelectCommand.Parameters.AddWithValue("@voterNic", voterNicTextbox2.Text);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+                      checkNic= dt.Rows[i]["voter_nic"].ToString();
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                 MessageBox.Show(ex.ToString());
+                }
+
+                try
+                {
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.SelectCommand = new SqlCommand("[checkVoterMobileNumber]", MyConnection);
+                    da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                    da.SelectCommand.Parameters.AddWithValue("@voterMobileNumber", voterMobileNumberTextbox4.Text);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+                        checkMob = dt.Rows[i]["voter_mobile_number"].ToString();
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                if (checkNic == voterNicTextbox2.Text)
+                {
+                    MessageBox.Show("NIC alredy exists in our database");
+                }
+                else if (checkMob == voterMobileNumberTextbox4.Text)
+                {
+                    MessageBox.Show("Mobile Number alredy exists in our database");
+
+                }
+                else
+                {
+                    ConnectionVoter cv = new ConnectionVoter();
+                    cv.registerVoter(voterNameTextbox1.Text, voterNicTextbox2.Text, voterMobileNumberTextbox4.Text, provinceDropdown1.selectedValue.ToString(), cityDropdown2.selectedValue.ToString(), addressTextbox3.Text, id, 0, 0);
+                    enroll en = new enroll();
+                    this.Hide();
+                    en.ShowDialog();
+                }
             }
 
 
@@ -113,6 +181,7 @@ namespace E_Voting_Desktop_Application
                 cityDropdown2.AddItem("Swat");
                 cityDropdown2.AddItem("Abbottabad");
             }
+            provincee = provinceDropdown1.selectedValue.ToString();
         }
 
         private void bunifuDropdown1_onItemSelected(object sender, EventArgs e)
@@ -141,6 +210,7 @@ namespace E_Voting_Desktop_Application
             {
                 MyConnection.Close();
             }
+            pollingg = pollingStationNumberDropdown3.selectedValue.ToString();
         }
 
         private void bunifuDropdown2_onItemSelected(object sender, EventArgs e)
@@ -202,6 +272,7 @@ namespace E_Voting_Desktop_Application
                     MyConnection.Close();
                 }
             }
+            cityy = cityDropdown2.selectedValue.ToString();
             }
 
         private void voterNicTextbox2_OnValueChanged(object sender, EventArgs e)

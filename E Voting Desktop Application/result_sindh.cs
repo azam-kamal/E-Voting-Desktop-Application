@@ -17,7 +17,7 @@ namespace E_Voting_Desktop_Application
         {
             InitializeComponent();
         }
-        SqlConnection MyConnection = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
+        SqlConnection MyConnection = new SqlConnection(@"Data Source=User-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
         SqlCommand command;
 
         private void back_btn_Click(object sender, EventArgs e)

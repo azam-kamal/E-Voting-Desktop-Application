@@ -21,7 +21,7 @@ namespace E_Voting_Desktop_Application
             InitializeComponent();
         }
         String getPollingStationNumer = voting_place.pollingStation;
-        SqlConnection MyConnection = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
+        SqlConnection MyConnection = new SqlConnection(@"Data Source=User-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
         SqlCommand command;
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)

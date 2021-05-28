@@ -16,13 +16,14 @@ namespace E_Voting_Desktop_Application
             InitializeComponent();
         }
 
-        SqlConnection MyConnection = new SqlConnection(@"Data Source=AZAM-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
+        SqlConnection MyConnection = new SqlConnection(@"Data Source=User-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
         SqlCommand command;
         String representation;
         String id;
         int btnClick = 0;
         bool fname;
         bool nic;
+        String provincee= "", cityy= "", partyy="", pollingg ="";
         private void registeration_Load(object sender, EventArgs e)
         {
             pollingStationDropDown3.RemoveItem("NA-245");
@@ -44,8 +45,8 @@ namespace E_Voting_Desktop_Application
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-
-            if (fullNameTextBox1.Text == "" && CNICTextBox2.Text == "" && AgeNumericUpDown1.Value.ToString() == ""  && nationalAssemblyCheckBox1.Checked == false && provincialAssemblyCheckBox2.Checked == false )
+            
+            if (fullNameTextBox1.Text == "" &&  pollingg==""&&provincee==""&&cityy==""&&partyy==""&& CNICTextBox2.Text == "" && AgeNumericUpDown1.Value.ToString() == ""  && nationalAssemblyRadioButton1.Checked == false &&provincialAssemblyRadioButton1.Checked== false )
             {
                 MessageBox.Show("All Field Are Empty");
 
@@ -55,6 +56,7 @@ namespace E_Voting_Desktop_Application
                 MessageBox.Show("Candidate Name is empty");
 
             }
+            
             else if (CNICTextBox2.Text == "")
             {
                 MessageBox.Show("Candidate NIC is empty");
@@ -65,50 +67,72 @@ namespace E_Voting_Desktop_Application
                 MessageBox.Show("Candidate Age is not selected");
 
             }
-            
-            else if (nationalAssemblyCheckBox1.Checked == false && provincialAssemblyCheckBox2.Checked == false)
+            else if (provincee == "")
+            {
+                MessageBox.Show("Province is not selected");
+
+            }
+            else if (cityy == "")
+            {
+                MessageBox.Show("City is not selected");
+
+            }
+         
+            else if (nationalAssemblyRadioButton1.Checked == false && provincialAssemblyRadioButton1.Checked == false)
             {
                 MessageBox.Show("Representation checkbox not checked");
 
             }
           else if (fname == true) { }
           else if (nic == true) { }
+        else if (pollingg == "")
+            {
+                MessageBox.Show("Polling is not selected");
 
+            }
             else
             {
-                if (nationalAssemblyCheckBox1.Checked == true && provincialAssemblyCheckBox2.Checked == false)
+                String checkNic = "";
+                try
                 {
-                    representation = "National Assembly";
-                    MessageBox.Show(fullNameTextBox1.Text);
-                    MessageBox.Show(CNICTextBox2.Text);
-                    MessageBox.Show(AgeNumericUpDown1.Value.ToString());
-                    MessageBox.Show(provinceDropdown1.selectedValue.ToString());
-                    MessageBox.Show(cityDropDown2.selectedValue.ToString());
-                    MessageBox.Show(id);
-                    MessageBox.Show(representation);
-
-
-                    MessageBox.Show(partyDropDown3.selectedValue.ToString());
-
-
-
-
-
-                    ConnectionCandidates cc = new ConnectionCandidates();
-                    cc.registerCandidate(fullNameTextBox1.Text, CNICTextBox2.Text, AgeNumericUpDown1.Value.ToString(), provinceDropdown1.selectedValue.ToString(), cityDropDown2.selectedValue.ToString(), id, partyDropDown3.selectedValue.ToString(), representation);
-                }
-                else if (nationalAssemblyCheckBox1.Checked == false && provincialAssemblyCheckBox2.Checked == true)
-                {
-                    representation = "Provincial Assembly";
-                    ConnectionCandidates cc = new ConnectionCandidates();
-                    cc.registerCandidate(fullNameTextBox1.Text, CNICTextBox2.Text, AgeNumericUpDown1.Value.ToString(), provinceDropdown1.selectedValue.ToString(), cityDropDown2.selectedValue.ToString(), id, partyDropDown3.selectedValue.ToString(), representation);
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.SelectCommand = new SqlCommand("[checkCandidateCNIC]", MyConnection);
+                    da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                    da.SelectCommand.Parameters.AddWithValue("@candidateNic", CNICTextBox2.Text);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+                        checkNic = dt.Rows[i]["candidate_cnic"].ToString();
+                    }
 
                 }
-                else if (nationalAssemblyCheckBox1.Checked == true && provincialAssemblyCheckBox2.Checked == true)
+                catch (Exception ex)
                 {
-                    representation = "both";
-                    ConnectionCandidates cc = new ConnectionCandidates();
-                    cc.registerCandidate(fullNameTextBox1.Text, CNICTextBox2.Text, AgeNumericUpDown1.Value.ToString(), provinceDropdown1.selectedValue.ToString(), cityDropDown2.selectedValue.ToString(), id, partyDropDown3.selectedValue.ToString(), representation);
+                    MessageBox.Show(ex.ToString());
+                }
+                if (checkNic == CNICTextBox2.Text)
+                {
+                    MessageBox.Show("CNIC already exists in the database");
+                }
+                else
+                {
+                    if (nationalAssemblyRadioButton1.Checked == true)
+                    {
+                        representation = "National Assembly";
+
+
+
+                        ConnectionCandidates cc = new ConnectionCandidates();
+                        cc.registerCandidate(fullNameTextBox1.Text, CNICTextBox2.Text, AgeNumericUpDown1.Value.ToString(), provinceDropdown1.selectedValue.ToString(), cityDropDown2.selectedValue.ToString(), id, partyDropDown3.selectedValue.ToString(), representation);
+                    }
+                    else
+                    {
+                        representation = "Provincial Assembly";
+                        ConnectionCandidates cc = new ConnectionCandidates();
+                        cc.registerCandidate(fullNameTextBox1.Text, CNICTextBox2.Text, AgeNumericUpDown1.Value.ToString(), provinceDropdown1.selectedValue.ToString(), cityDropDown2.selectedValue.ToString(), id, partyDropDown3.selectedValue.ToString(), representation);
+
+                    }
                 }
 
             }
@@ -201,6 +225,7 @@ namespace E_Voting_Desktop_Application
                     MyConnection.Close();
                 }
             }
+            cityy = cityDropDown2.selectedValue.ToString();
         }
         private void fullNameTextBox1_OnValueChanged(object sender, EventArgs e)
         {
@@ -219,6 +244,11 @@ namespace E_Voting_Desktop_Application
                 namePictureBox3.Image = Properties.Resources.cross;
                 fname = true;
             }
+        }
+
+        private void partyDropDown3_onItemSelected(object sender, EventArgs e)
+        {
+            partyy = partyDropDown3.selectedValue.ToString();
         }
 
         private void CNICTextBox2_OnValueChanged(object sender, EventArgs e)
@@ -253,7 +283,6 @@ namespace E_Voting_Desktop_Application
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     id = dt.Rows[i]["station_Id"].ToString();
-                    MessageBox.Show(id.ToString());
                 }
 
             }
@@ -265,12 +294,14 @@ namespace E_Voting_Desktop_Application
             {
                 MyConnection.Close();
             }
+            pollingg = pollingStationDropDown3.selectedValue.ToString();
         }
 
         private void provinceDropdown1_onItemSelected_1(object sender, EventArgs e)
         {
             if (provinceDropdown1.selectedValue == "Sindh")
             {
+
                 cityDropDown2.AddItem("Karachi");
                 cityDropDown2.AddItem("Hyderabad");
                 cityDropDown2.AddItem("Larkana");
@@ -297,6 +328,7 @@ namespace E_Voting_Desktop_Application
                 cityDropDown2.AddItem("Swat");
                 cityDropDown2.AddItem("Abbottabad");
             }
+            provincee = provinceDropdown1.selectedValue.ToString();
         }
     }
 }

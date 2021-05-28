@@ -13,6 +13,7 @@ namespace E_Voting_Desktop_Application
     {
        
         bool sno,name,ad;
+        String provincee = "", cityy = "";
         private void pollingStation_regs_Load(object sender, EventArgs e)
         {
            /* try
@@ -32,7 +33,7 @@ namespace E_Voting_Desktop_Application
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            if (stationNumberTextBox1.Text == "" && stationNameTextBox2.Text == "" && provinceDropDown1.selectedValue.ToString() == "" && cityDropDown2.selectedValue.ToString() == ""&&addressTextBox3.Text==""&&longitudeTextBox4.Text==""&& latitudeTextBox5.Text=="")
+            if (stationNumberTextBox1.Text == "" && stationNameTextBox2.Text == "" && provincee == "" && cityy == ""&&addressTextBox3.Text==""&&longitudeTextBox4.Text==""&& latitudeTextBox5.Text=="")
             {
                 MessageBox.Show("All Fields Are Left Empty");
             }
@@ -43,17 +44,20 @@ namespace E_Voting_Desktop_Application
             {
                 MessageBox.Show("Station Name is empty");
             }
-            else if (provinceDropDown1.selectedValue.ToString() == "")
-            {
-                MessageBox.Show("province is not selected");
-            }
-            else if (cityDropDown2.selectedValue.ToString() == "")
-            {
-                MessageBox.Show("city is not selected");
-            }
+         
             else if (addressTextBox3.Text == "")
             {
                 MessageBox.Show("address is empty");
+            }
+            else if (provincee == "")
+            {
+                MessageBox.Show("Province is not selected");
+
+            }
+            else if (cityy == "")
+            {
+                MessageBox.Show("City is not selected");
+
             }
             else if (longitudeTextBox4.Text == "")
             {
@@ -110,6 +114,11 @@ namespace E_Voting_Desktop_Application
             ri.ShowDialog();
         }
 
+        private void cityDropDown2_onItemSelected(object sender, EventArgs e)
+        {
+            cityy = cityDropDown2.selectedValue.ToString();
+        }
+
         private void bunifuDropdown3_onItemSelected(object sender, EventArgs e)
         {
             if (provinceDropDown1.selectedValue == "Sindh")
@@ -140,6 +149,8 @@ namespace E_Voting_Desktop_Application
                 cityDropDown2.AddItem("Swat");
                 cityDropDown2.AddItem("Abbottabad");
             }
+            provincee = provinceDropDown1.selectedValue.ToString();
+           // cityy=cityDropDown2.selectedValue.ToString()
         }
 
         private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
