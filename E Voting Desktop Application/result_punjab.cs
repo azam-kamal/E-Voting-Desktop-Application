@@ -46,11 +46,37 @@ namespace E_Voting_Desktop_Application
                 label9.Text = PartyName;
                 label10.Text = candidateName;
                 label11.Text = voteCount;
+                if (PartyName == "PTI")
+                {
+                    pictureBox1.Image = Properties.Resources.ptiFlag;
+                }
+                else if (PartyName == "ANP")
+                {
+                    pictureBox1.Image = Properties.Resources.anpFlag;
+                }
+                else if (PartyName == "PML(N)")
+                {
+                    pictureBox1.Image = Properties.Resources.pmlnFlag;
+                }
+                else if (PartyName == "MQM")
+                {
+                    pictureBox1.Image = Properties.Resources.mqmFlag;
+                }
+                else if (PartyName == "PPP")
+                {
+                    pictureBox1.Image = Properties.Resources.pppFlag;
+                }
+
             }
             catch (Exception error)
             {
                 MessageBox.Show(error.ToString());
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

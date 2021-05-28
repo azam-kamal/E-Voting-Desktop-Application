@@ -16,7 +16,11 @@ namespace E_Voting_Desktop_Application
         {
             InitializeComponent();
         }
+
         SqlConnection MyConnection = new SqlConnection(@"Data Source=User-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
+
+       // SqlConnection MyConnection = new SqlConnection(@"Data Source=User-PC;Initial Catalog=E_VOTING_DATABASE;Integrated Security=True");
+
         SqlCommand command;
         private void bunifuTileButton3_Click(object sender, EventArgs e)
         {
@@ -71,10 +75,11 @@ namespace E_Voting_Desktop_Application
 
         private void bunifuTileButton1_Click(object sender, EventArgs e)
         {
-     
+
             command = new SqlCommand("[ElectionSwitchON]", MyConnection);
             command.CommandType = CommandType.StoredProcedure;
             try
+
             {
                 MyConnection.Open();
                 command.ExecuteNonQuery();
@@ -89,6 +94,22 @@ namespace E_Voting_Desktop_Application
             {
                 MyConnection.Close();
             }
+            try
+            {
+                MyConnection.Open();
+                command.ExecuteNonQuery();
+                command.Dispose();
+            } 
+            catch (Exception ex)
+            {
+                command.Parameters.AddWithValue("@responseMessage", "Sort Of Connection Error");
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                MyConnection.Close();
+            }
+
 
         }
 
